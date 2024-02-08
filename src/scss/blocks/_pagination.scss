@@ -1,0 +1,16 @@
+.pagination {
+    margin: 0 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    width: 358px;
+    height: 36px;
+    
+    // &__btn--arrow {}
+    
+    &__btn--number {
+        display: flex;
+        flex-direction: row;
+    }
+}

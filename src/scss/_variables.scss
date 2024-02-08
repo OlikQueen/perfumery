@@ -1,0 +1,39 @@
+// Colors
+$primary-color: #070707;
+$secondary-color: #828282;
+$background-color: #191A1B;
+$error-color: #f44336;
+$success-color: #4caf50;
+$text-color: #070707;
+$text-light-color: #828282;
+$border-color: #e0e0e0;
+$gradient: linear-gradient(117.67deg, rgb(192, 158, 108) -2.586%,rgb(255, 235, 204) 41.075%,rgb(191, 147, 107) 99.846%);
+
+
+// Typography
+$font-family-primary: 'Museo Sans Cyrl';
+// $font-family-secondary: ;
+
+// Breakpoints
+$screen-xs: 320px;
+$screen-sm: 480px;
+$screen-md: 768px;
+$screen-lg: 980px;
+$screen-xl: 1368px;
+$screen-xxl: 1920px;
+$screen-2k: 2560px;
+$screen-4k: 3840px;
+
+// indent
+$indent-default: 4px;
+$indent-default-xs: $indent-default*2; // 8
+$indent-default-sm: $indent-default*3; // 12
+$indent-default-md: $indent-default*4; // 16
+$indent-default-lg: $indent-default*5; // 20
+$indent-default-xl: $indent-default*6; // 24
+
+// Border radius
+$border-radius: 4px;
+
+// Transitions
+$transition-speed: 0.3s;

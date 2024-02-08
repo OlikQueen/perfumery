@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" src="/main.js" defer></script>
+  <title>ui</title>
+</head>
+<body>
+    <!-- 1. заголовки (h2):
+                Популярные ароматы
+                Бонусы от покупок
+                Каталог -->
+    <h2 class="headers">Популярные ароматы</h2>
+    <h2 class="headers">Бонусы от покупок</h2>
+    <h2 class="headers">Каталог</h2>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- 2.  кнопки(button):
+                в корзину (на карточке парфюмов)
+                Узнать подробнее   !!! ссылка
+                в корзину (на товарных карточках) -->
+    <div style="width: 245px;">
+        <button type="button" class="btn">
+            <p class="btn__p">
+                в корзину
+            </p>
+        </button>
+        <a href="" class="btn">
+            <p class="btn__p">
+                Узнать подробнее
+            </p>
+        </a>
+    </div>
+
+    
+    <br>
+    <br>
+    <br>
+    <!-- 3.  карточки парфюмов (perfume_card):
+            состоят из:
+                фон-картинка
+                заголовка (h3)
+                параграф (p)
+                кнопка (button) -->
+    <div style="width: 297px;">
+        <div class="perfume-card">
+            <div class="perfume-card__inner">
+                <h3 class="perfume-card__h3">
+                    Для неё
+                </h3>
+                <div class="perfume-card__wrap">
+                    <h3 class="perfume-card__h3 perfume-card__h3--weight">
+                        Victoria Secret Bombshell
+                    </h3>
+                    <button type="button" class="btn">
+                        <p class="btn__p">в корзину</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <br>
+    <br>
+    <br>
+
+         <!-- 4.  кнопки объёма мл -->
+         <div class="blok-btn">
+             <button type="button" class="blok-btn__ml btn btn--size">
+                <p class="btn__p">10</p>
+            </button>
+            <button type="button" class="blok-btn__ml btn btn--size">
+                <p class="btn__p">30</p>
+            </button>
+            <button type="button" class="blok-btn__ml btn btn--size">
+                <p class="btn__p">50</p>
+            </button>
+            <button type="button" class="blok-btn__ml btn btn--size">
+                <p class="btn__p">100</p>
+            </button>
+         </div>
+
+         
+    <br>
+    <br>
+    <br>
+
+         <!-- 5.  товарная карточка(product card):
+                    состоит из:
+                        фото товара
+                        название аромата
+                        Объем мл.
+                        кнопки объёма мл (blok-btn)
+                        Стоимость:2 400,00 ₽
+                        кнопка (button) -->
+
+        <!-- добавить state active, hover -->
+        <div style="width: 358px;">
+            <div class="product-card">
+                <img src="img/product-card.png" alt="" class="product-card__img">
+                <h4 class="product-card__h4">The devil is a loser by Mushfig</h4>
+                <h4 class="product-card__h4">Объем мл.</h4>
+                
+                <div class="product-card__blok-btn blok-btn">
+                    <button type="button" class="blok-btn__ml btn btn--size">
+                        <p class="btn__p">10</p>
+                    </button>
+                    <button type="button" class="blok-btn__ml btn btn--size">
+                        <p class="btn__p">30</p>
+                    </button>
+                    <button type="button" class="blok-btn__ml btn btn--size">
+                        <p class="btn__p">50</p>
+                    </button>
+                    <button type="button" class="blok-btn__ml btn btn--size">
+                        <p class="btn__p">100</p>
+                    </button>
+                </div>
+                <div class="product-card__inner">
+                    <h4 class="product-card__h4">Стоимость:   </h4>
+                    <span class="product-card__span">2 400,00 &#8381; </span>
+                </div>
+                <button type="button" class="product-card__btn btn">
+                    <p class="btn__p">в корзину</p>
+                </button>
+            </div>
+        </div>
+
+    <br>
+    <br>
+    <br>
+
+         <!-- 6.  стрелка перелистывания -->
+         <a type="button" class="btn btn--arrow btn--transform">
+            <p class="btn__p">&rsaquo;</p>
+        </a>
+         <a type="button" class="btn btn--arrow">
+            <p class="btn__p">&rsaquo;</p>
+         </a>
+
+         <!-- тег а -->
+         <a type="button" class="btn btn--number">1</a>
+
+         <br>
+         <br>
+         <br>
+
+         <!-- блок перелистывания -->
+         <!-- добавить state active, hover -->
+         <div class="pagination">
+            <a type="button" class="pagination__btn--arrow btn btn--arrow btn--transform">
+                <p class="btn__p">&rsaquo;</p>    
+            </a>
+            <div class="pagination__btn--number">
+                <a type="button" class="btn btn--number">1</a>
+                <a type="button" class="btn btn--number">2</a>
+                <a type="button" class="btn btn--number">3</a>
+                <a type="button" class="btn btn--number">...</a>
+                <a type="button" class="btn btn--number">39</a>
+                <a type="button" class="btn btn--number">40</a>
+            </div>
+            <a type="button" class="pagination__btn--arrow btn btn--arrow">
+                <p class="btn__p">&rsaquo;</p>
+            </a>
+         </div>
+
+         <br>
+         <br>
+         <br>
+
+            <!-- 7.  значёк и подпись -->
+        <div class="info">
+            <img src="img/address.svg" alt="" class="info__img">
+            <p class="info__p text">
+                г. Астрахань: ул. Свердлова, 106;ул. Победы 55А, пав. 10.
+            </p>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="inform">
+            <div class="inform__group inform__group--time">
+                <div class="inform__info info">
+                    <img src="img/address.svg" alt="" class="info__img">
+                    <p class="info__p text">
+                        г. Астрахань: ул. Свердлова, 106;ул. Победы 55А, пав. 10.
+                    </p>
+                </div>
+                <div class="inform__info info">
+                    <img src="img/time.svg" alt="" class="info__img">
+                    <p class="info__p text">
+                        Ежедневно с 9:00 до 18:00
+                    </p>
+                </div>
+            </div>
+            <div class="inform__group inform__group--contackts">
+                <div class="inform__info info">
+                    <img src="img/whatsap.svg" alt="" class="info__img">
+                    <p class="info__p text">
+                        Мы в Whatsapp
+                    </p>
+                </div>
+                <div class="inform__info info">
+                    <img src="img/telegram.svg" alt="" class="info__img">
+                    <p class="info__p text">
+                        Мы в Telegram
+                    </p>
+                </div>
+                <div class="inform__info info">
+                    <img src="img/mail.svg" alt="" class="info__img">
+                    <p class="info__p text">
+                        parfumpomotivam@gmail.com
+                    </p>
+                </div>
+            </div>
+            <div class="inform__group inform__group--info">
+                <div class="inform__info info">
+                    <img src="img/offis.svg" alt="" class="info__img">
+                    <p class="info__p text">
+                        ИП РАГИМОВА А.М.К. ИНН 510704693888
+                    </p>
+                </div>
+            </div>           
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <!-- svg sprite -->
+
+    
+</body>
+</html>
