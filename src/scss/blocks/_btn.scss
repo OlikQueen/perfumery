@@ -1,4 +1,5 @@
 .btn {
+
     display: flex;
     padding: 12px 20px;
     justify-content: center;
@@ -14,23 +15,29 @@
     box-shadow: 0px 2px 10px 0px rgba(184, 164, 142, 0.40);
     text-decoration: none;
 
-
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
     
-    background: $gradient;
-    background-clip: text;
-    color: transparent;
-   
-    
-}
+    &__p {
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
 
-.btn:hover {
-    background: $gradient;
-    color: #2B2825;
+        background-color: #2B2825;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: $gradient;
+    }
+
+    &__p:hover {
+       
+        background-clip: none;
+    }
+    // ??????????????????????????????????????????????????????????????
+    &:hover {
+        background: $gradient;
+
+    }
 }
 
 
@@ -63,11 +70,17 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 15px;
-}
-.btn--number:hover {
-    background: rgb(183, 160, 139);
-}
-// ?????????????????????????????????????????????????
-.btn--number:focus{
-    background: rgb(183, 160, 139);
+
+    &:focus,
+    &:hover {
+        background: darken(rgb(183, 160, 139), 7%);
+        color: rgb(54, 51, 46);
+    }
+
+    &:active {
+        &:hover {
+            background: #2B2825;
+            color: #D6B88D;
+        }
+    }
 }

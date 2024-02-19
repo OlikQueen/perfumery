@@ -60,3 +60,9 @@ npm run build
 ./block.sh header 
  
 Скрипт создаст файл _header.scss с определением класса и добавит импорт в _index.scss
+
+
+### при ошибке создания репозитория
+git remote add NAME URL >/dev/null 2>&1 || git remote set-url NAME URL
+
+То есть если ветка существует - просто апдейтнуть урл, если нет - то добавить.
