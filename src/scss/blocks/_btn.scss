@@ -1,4 +1,4 @@
-.btn {
+ .btn {
 
     display: flex;
     padding: 12px 20px;
@@ -16,27 +16,20 @@
     text-decoration: none;
 
     
-    &__p {
-        text-align: center;
-        font-family: Montserrat;
-        font-size: 16px;
-        font-weight: 600;
-        text-transform: uppercase;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #D6B88D;  
 
-        background-color: #2B2825;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-image: $gradient;
-    }
-
-    &__p:hover {
-       
-        background-clip: none;
-    }
-    // ??????????????????????????????????????????????????????????????
     &:hover {
         background: $gradient;
-
+        color: #2B2825;
+    }
+    &:active {
+        background: #2B2825;
+        color: #D6B88D;
     }
 }
 
@@ -84,3 +77,4 @@
         }
     }
 }
+

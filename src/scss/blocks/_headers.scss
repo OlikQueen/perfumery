@@ -8,4 +8,15 @@
     color: transparent;
 
     margin-left: 5.64vw;
+    
+
+    //не срабатывает
+    // @include mq(md) {
+    //     font-size: 24px;
+    // }
+}
+@media (min-width: 768px) {
+    .headers {
+        font-size: 24px;
+    }
 }

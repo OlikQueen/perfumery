@@ -25,17 +25,17 @@ $breakpoints: (
 }
 
 // px to vw
-@mixin vw-360($property, $px-value) {
-  $vw-value: calc($px-value / 360 * 100);
-  #{$property}: #{$vw-value}vw;
-}
+// @mixin vw-360($property, $px-value) {
+//   $vw-value: calc($px-value / 360 * 100);
+//   #{$property}: #{$vw-value}vw;
+// }
 
-@mixin vw-768($property, $px-value) {
-  $vw-value: calc($px-value / 768 * 100);
-  #{$property}: #{$vw-value}vw;
-}
+// @mixin vw-768($property, $px-value) {
+//   $vw-value: calc($px-value / 768 * 100);
+//   #{$property}: #{$vw-value}vw;
+// }
 
-@mixin vw-1368($property, $px-value) {
-  $vw-value: calc($px-value / 1368 * 100);
-  #{$property}: #{$vw-value}vw;
-}
+// @mixin vw-1368($property, $px-value) {
+//   $vw-value: calc($px-value / 1368 * 100);
+//   #{$property}: #{$vw-value}vw;
+// }
