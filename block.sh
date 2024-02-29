@@ -1,4 +1,4 @@
-#!/bin/bash 
+y6#!/bin/bash 
  
 # Получаем параметр из аргументов командной строки 
 param="$1" 
@@ -24,7 +24,7 @@ if [ -f "$path" ]; then
     echo -e "\033[0;31mФайл $path уже существует\033[0m" 
 else 
     # Создаем файл с определением класса, если его нет 
-    echo -e ".$param {\n    \n}" > "$path" 
+    echo -e "@import \"../mixins\";\n\n.$param {\n    \n}" > "$path" 
  
     # Добавляем импорт в _index.scss, если его там еще нет 
     if [ ! -f "$index_path" ]; then 

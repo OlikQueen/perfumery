@@ -1,3 +1,5 @@
+@import "../mixins";
+
 .product-card {
     width: 100%;
     display: flex;
@@ -26,7 +28,6 @@
     }
 
     // &__blok-btn {}
-
 
     &__inner {
         width: 100%;

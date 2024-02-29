@@ -1,3 +1,5 @@
+@import "../mixins";
+
 .headers {
     font-family: Montserrat;
     font-size: 22px;
@@ -8,15 +10,15 @@
     color: transparent;
 
     margin-left: 5.64vw;
-    
+
 
     //не срабатывает
-    // @include mq(md) {
-    //     font-size: 24px;
-    // }
-}
-@media (min-width: 768px) {
-    .headers {
-        font-size: 24px;
+    @include mq(md) {
+        font-size: 100px;
     }
 }
+// @media (min-width: 768px) {
+//     .headers {
+//         font-size: 49px;
+//     }
+// }

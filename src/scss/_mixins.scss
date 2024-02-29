@@ -1,23 +1,20 @@
 // Media Queries
 $breakpoints: (
-  xs: $screen-xs,
-  sm: $screen-sm,
-  md: $screen-md,
-  lg: $screen-lg,
-  xl: $screen-xl,
-  xxl: $screen-xxl,
-  2k: $screen-2k,
-  4k: $screen-4k,
+  "xs": $screen-xs,
+  "sm": $screen-sm,
+  "md": $screen-md,
+  "lg": $screen-lg,
+  "xl": $screen-xl,
+  "xxl": $screen-xxl,
+  "2k": $screen-2k,
+  "4k": $screen-4k,
 );
-
 @mixin mq($width, $type: min) {
   @if map_has_key($breakpoints, $width) {
     $width: map_get($breakpoints, $width);
-
-    @if $type ==max {
+    @if $type == max {
       $width: $width - 1px;
     }
-
     @media only screen and (#{$type}-width: $width) {
       @content;
     }
