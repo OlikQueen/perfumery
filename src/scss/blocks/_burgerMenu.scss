@@ -1,16 +1,94 @@
 @import "../mixins";
 
 .burgerMenu {
-    
+
+    &__row {
+        // position: absolute;
+        width: 305px;
+        height: 406px;
+        // left: 0;
+        // right: 175px;
+        // top: 0;
+        // bottom: 508px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px 20px 0px 20px;
+
+        border-radius: 4px;
+
+        background: rgb(33, 30, 28);
+    }
+
+    &__head {}
+
+    &__cross {
+        position: static;
+        width: 40px;
+        height: 40px;
+
+        flex: none;
+        order: undefined;
+        flex-grow: 0;
+        margin: 0px 0px;
+    }
+
+    // .burgerMenu__logo
+
+    &__logo {
+        /* Без-имени-2 1 */
+        position: static;
+        width: 50px;
+        height: 50px;
+        // left: 0%;
+        // right: 5%;
+        transform: translateX(100%);
+
+    }
+
+    // .burgerMenu__nav
+
+    &__nav {}
+
+    // .burgerMenu__footer
+
+    &__footer {}
+
+    &__info {
+        align-items: start;
+        gap: 0;
+        margin-block: 0;
+    }
+
+    &__img{}
 }
 
-.main-button {
-  width: 40px;
-height: 40px;
-  box-sizing: border-box;
-border: 1px solid rgb(214, 184, 141);
-border-radius: 4px;
+.inform {
 
-box-shadow: 0px 2px 10px 0px rgba(184, 164, 142, 0.4);
-background: rgb(43, 40, 37);
+    // .inform__group
+
+    &__group {}
+
+    // .inform__group--info
+
+    &__group--info {}
+
+    // .inform__info
+
+
 }
+
+.info {
+
+    // .info__img
+
+    &__img {}
+
+    // .info__p
+
+    &__p {}
+}
+
+.text {}
