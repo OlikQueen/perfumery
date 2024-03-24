@@ -1,0 +1,39 @@
+@import "../mixins";
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    width: 165px;
+    height: auto;
+
+    &__btn {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__dropd-img {
+        position: relative;
+        width: 24px;
+        height: 24px;
+    }
+
+    // &:hover &__dropd-img svg {
+    //     fill: #2B2825;
+    // }
+
+    &__content {
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+
+    &__li{
+        width: 165px;
+    }
+
+    &:hover &__content {
+        display: block;
+    }
+}
