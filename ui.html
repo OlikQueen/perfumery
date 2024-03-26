@@ -179,12 +179,10 @@
     <!-- hover каталога для десктопа -->
     <div class="dropdown">
         <button class="dropdown__btn btn">
-            <svg class="dropdown__dropd-img">
-                <use xlink:href="#dropd"></use>
-            </svg>
+            <span class="dropdown__dropd-img"></span>
             Каталог
         </button>
-        <nav class="dropdown__content burgerMenu__nav nav">
+        <nav class="dropdown__content nav">
             <li class="dropdown__li nav__li">
                 <a class="nav__btn btn ">
                     Мужские
@@ -362,7 +360,27 @@
         </div>
     </div>
 
+    <br>
+    <br>
+    <br>
 
+
+    <a data-modal-link data-key="search">поиск элемента</a>
+    <div data-modal-box data-key="search">
+        <a data-modal-close >close</a>
+        search box
+    </div>
+    
+    <a data-modal-link data-key="city">поиск города</a>
+    <div data-modal-box data-key="city">
+        <a data-modal-close >close</a>
+        citys box
+    </div>
+    
+    <!-- <a href="" data-modal-link></a>
+    <div data-modal-box>
+        <a href="">close</a>
+    </div> -->
 
 
 
@@ -598,7 +616,7 @@
                 </linearGradient>
             </defs>
         </symbol>
-
+        <!-- 
         <symbol id="dropd" viewBox="0 0 24 24" fill="none">
             <path d="M2 4H22" stroke="url(#paint0_linear_3680_711)" stroke-width="2" stroke-linecap="round" />
             <path d="M2.5 12H16.5" stroke="url(#paint1_linear_3680_711)" stroke-width="2" stroke-linecap="round" />
@@ -623,7 +641,7 @@
                     <stop offset="1" stop-color="#BF936B" />
                 </linearGradient>
             </defs>
-        </symbol>
+        </symbol> -->
     </svg>
 </body>
 
