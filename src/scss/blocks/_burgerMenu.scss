@@ -32,6 +32,11 @@
         order: undefined;
         flex-grow: 0;
         margin: 0px 0px;
+
+        & use {
+            fill: transparent;
+            stroke: #D6B88D;
+        }
     }
 
     &__logo {

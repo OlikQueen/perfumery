@@ -364,33 +364,72 @@
     <br>
     <br>
 
+    <!-- поиск на мобильном -->
+    <a class="modal-target" data-modal-target data-key="search">
+        <svg class="modal-target__search">
+            <use xlink:href="#search"></use>
+        </svg>
+    </a>
+    <div class="modal-box" data-modal-box data-key="search">
+        <!-- <a class="modal-box__close" data-modal-close>
+            <svg class="modal-box__cross">
+                <use xlink:href="#cross"></use>
+            </svg>
+        </a> -->
+        <div class="modal-box__container">
+            <input type="text" class="modal-box__input" placeholder="какой парфюм хотите найти?">
+            <svg class="modal-box__icon">
+                <use xlink:href="#search"></use>
+            </svg>
+        </div>
+    </div>
 
-    <a data-modal-link data-key="search">поиск элемента</a>
-    <div data-modal-box data-key="search">
-        <a data-modal-close >close</a>
-        search box
+    <br>
+    <br>
+    <br>
+
+    <!-- поиск на мобильном (города) -->
+    <a class="modal-target" data-modal-targets data-key="search-city">Москва</a>
+    <div class="modal-box" data-modal-boxs data-key="search-city">
+        <a class="modal-box__close" data-modal-closes>
+            <svg class="modal-box__cross">
+                <use xlink:href="#cross"></use>
+            </svg>
+        </a>
+        <div class="modal-box__container modal-box__container-size">
+            <input type="text" class="modal-box__input" data-modal-input placeholder="г. Москва">
+            <ul class="modal-box__city-list "  data-modal-city-list>
+                <li>Москва</li>
+                <li>Санкт-Петербург</li>
+                <li>Калуга</li>
+                <li>Новосибирск</li>
+                <li>Владикавказ</li>
+            </ul>
+        </div>
     </div>
-    
-    <a data-modal-link data-key="city">поиск города</a>
-    <div data-modal-box data-key="city">
-        <a data-modal-close >close</a>
-        citys box
-    </div>
-    
-    <!-- <a href="" data-modal-link></a>
-    <div data-modal-box>
-        <a href="">close</a>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- <a class="modal-target" data-modal-target data-key="city">поиск города</a>
+    <div class="modal-box" data-modal-box data-key="city">
+        <a class="modal-box__close" data-modal-close>
+            <svg class="modal-box__cross">
+                <use xlink:href="#cross"></use>
+            </svg>
+        </a>
+        <div class="modal-box__container" >
+            <input type="text" class="search-input" placeholder="city">
+            <svg class="search-icon" id="crs">
+                <use xlink:href="#search"></use>
+            </svg>
+        </div>
     </div> -->
 
 
 
-
-    <!-- поиск на мобильном -->
-
     <!-- svg sprite -->
-
-
-
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:0; height: 0;">
         <symbol id="adres" viewBox="0 0 40 40" fill="none">
             <defs>
@@ -501,18 +540,10 @@
             </g>
         </symbol>
 
-        <symbol id="cross" viewBox="0 0 40 40" fill="none">
-            <defs>
-                <clipPath id="clip69_22052">
-                    <rect id="Component 7" width="40.000000" height="40.000000" fill="white" fill-opacity="0" />
-                </clipPath>
-            </defs>
-            <rect id="Component 7" width="40.000000" height="40.000000" fill="#FFFFFF" fill-opacity="0" />
-            <g clip-path="url(#clip69_22052)">
-                <path id="Vector" d="M26 14L14 26" stroke="#BEAE97" stroke-opacity="1.000000" stroke-width="2.000000"
-                    stroke-linejoin="round" stroke-linecap="round" />
-                <path id="Vector" d="M14 14L26 26" stroke="#BEAE97" stroke-opacity="1.000000" stroke-width="2.000000"
-                    stroke-linejoin="round" stroke-linecap="round" />
+        <symbol id="cross" viewBox="0 0 40 40">
+            <g>
+                <path id="Vector" d="M26 14L14 26" />
+                <path id="Vector" d="M14 14L26 26" />
             </g>
         </symbol>
 
@@ -616,32 +647,31 @@
                 </linearGradient>
             </defs>
         </symbol>
-        <!-- 
-        <symbol id="dropd" viewBox="0 0 24 24" fill="none">
-            <path d="M2 4H22" stroke="url(#paint0_linear_3680_711)" stroke-width="2" stroke-linecap="round" />
-            <path d="M2.5 12H16.5" stroke="url(#paint1_linear_3680_711)" stroke-width="2" stroke-linecap="round" />
-            <path d="M2 20H22" stroke="url(#paint2_linear_3680_711)" stroke-width="2" stroke-linecap="round" />
+
+        <symbol id="search" viewBox="0 0 40 40">
+            <path
+                d="M19 27C23.4183 27 27 23.4183 27 19C27 14.5817 23.4183 11 19 11C14.5817 11 11 14.5817 11 19C11 23.4183 14.5817 27 19 27Z"
+                stroke="url(#paint0_linear_3708_18742)" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path d="M29.0002 29L24.7002 24.7" stroke="url(#paint1_linear_3708_18742)" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
             <defs>
-                <linearGradient id="paint0_linear_3680_711" x1="1.46399" y1="4.15774" x2="13.8773" y2="14.4721"
+                <linearGradient id="paint0_linear_3708_18742" x1="10.5712" y1="13.5238" x2="27.3292" y2="14.22"
                     gradientUnits="userSpaceOnUse">
                     <stop stop-color="#C09E6C" />
                     <stop offset="0.426246" stop-color="#FFEBCC" />
                     <stop offset="1" stop-color="#BF936B" />
                 </linearGradient>
-                <linearGradient id="paint1_linear_3680_711" x1="2.12479" y1="12.1577" x2="13.1003" y2="18.5415"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#C09E6C" />
-                    <stop offset="0.426246" stop-color="#FFEBCC" />
-                    <stop offset="1" stop-color="#BF936B" />
-                </linearGradient>
-                <linearGradient id="paint2_linear_3680_711" x1="1.46399" y1="20.1577" x2="13.8773" y2="30.4721"
+                <linearGradient id="paint1_linear_3708_18742" x1="24.585" y1="25.3782" x2="29.0887" y2="25.5653"
                     gradientUnits="userSpaceOnUse">
                     <stop stop-color="#C09E6C" />
                     <stop offset="0.426246" stop-color="#FFEBCC" />
                     <stop offset="1" stop-color="#BF936B" />
                 </linearGradient>
             </defs>
-        </symbol> -->
+        </symbol>
+
+
     </svg>
 </body>
 

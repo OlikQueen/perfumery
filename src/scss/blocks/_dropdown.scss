@@ -2,15 +2,40 @@
 
 
 .dropdown {
+    $block: &;
     position: relative;
     display: inline-block;
 
     width: 165px;
     height: auto;
 
+    // &:hover &__dropd-img,
+    // &:hover &__dropd-img::after,
+    // &:hover &__dropd-img::before {
+    //     background: $gradient;
+    // }
+
+    // &:active &__dropd-img,
+    // &:active &__dropd-img::after,
+    // &:active &__dropd-img::before {
+    //     background: $gradient;
+    // }
+
     &__btn {
         display: flex;
         justify-content: space-around;
+
+        &:hover #{$block}__dropd-img,
+        &:hover #{$block}__dropd-img::after,
+        &:hover #{$block}__dropd-img::before {
+            background: #2B2825;
+        }
+
+        &:active #{$block}__dropd-img,
+        &:active #{$block}__dropd-img::after,
+        &:active #{$block}__dropd-img::before {
+            background: $gradient;
+        }
     }
 
     &__dropd-img {
@@ -29,7 +54,7 @@
             height: 2px;
             background: $gradient;
             border-radius: 5px;
-            margin: 6px auto;            
+            margin: 6px auto;
         }
 
         &::before {
@@ -41,18 +66,6 @@
         }
     }
 
-    &:hover &__dropd-img,
-    &:hover &__dropd-img::after,
-    &:hover &__dropd-img::before {
-        background: #2B2825;
-    }
-
-    // &:active &__dropd-img,
-    // &:active &__dropd-img::after,
-    // &:active &__dropd-img::before {
-    //     background: $gradient;
-    // }
-   
     &__content {
         display: none;
         position: absolute;
