@@ -371,11 +371,6 @@
         </svg>
     </a>
     <div class="modal-box" data-modal-box data-key="search">
-        <!-- <a class="modal-box__close" data-modal-close>
-            <svg class="modal-box__cross">
-                <use xlink:href="#cross"></use>
-            </svg>
-        </a> -->
         <div class="modal-box__container">
             <input type="text" class="modal-box__input" placeholder="какой парфюм хотите найти?">
             <svg class="modal-box__icon">
@@ -389,24 +384,31 @@
     <br>
 
     <!-- поиск на мобильном (города) -->
-    <a class="modal-target" data-modal-targets data-key="search-city">Москва</a>
-    <div class="modal-box" data-modal-boxs data-key="search-city">
-        <a class="modal-box__close" data-modal-closes>
+    <a class="modal-target" data-modal-target data-key="search-city">Москва</a>
+    <div class="modal-box" data-modal-box data-key="search-city">
+        <a class="modal-box__close" data-modal-close>
             <svg class="modal-box__cross">
                 <use xlink:href="#cross"></use>
             </svg>
         </a>
         <div class="modal-box__container modal-box__container-size">
-            <input type="text" class="modal-box__input" data-modal-input placeholder="г. Москва">
-            <ul class="modal-box__city-list "  data-modal-city-list>
-                <li>Москва</li>
-                <li>Санкт-Петербург</li>
-                <li>Калуга</li>
-                <li>Новосибирск</li>
-                <li>Владикавказ</li>
-            </ul>
+
         </div>
     </div>
+
+
+    <br>
+    <br>
+    <br>
+    <!-- выбор города -->
+    <!-- input, поле выбора, список городов -->
+    <div class="choice-city" data-choice-city>
+        <div class="choice-city__input-row">
+            <input type="text" class="choice-city__input" placeholder="г. Москва">
+        </div>
+        <ul class="choice-city__list" data-choice-list></ul>
+    </div>
+
 
     <br>
     <br>

@@ -6,5 +6,6 @@ setupCounter(document.querySelector('#counter'))
 import { modal } from './src/js/modal.js'
 modal()
 
-import { modalCity } from './src/js/modal-city.js'
-modalCity()
+import { choiceCity } from './src/js/choice-city.js'
+choiceCity()
+
