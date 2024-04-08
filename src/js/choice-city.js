@@ -65,7 +65,7 @@ export function choiceCity() {
     const inputNode = cityNode.querySelector("input");
     inputNode.addEventListener('input', function () {
         const newCitys = [];
-        const searchValue = inputNode.value.trim().toLowerCase();
+        const searchValue = inputNode.value.trim();
 
         for (const city of citys) {
             // const regex = /а/g;

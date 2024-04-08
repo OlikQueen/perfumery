@@ -1,10 +1,3 @@
-@media (min-width: px) {
-        . {
-          
-        }
-    }
-
-
 # создать пустой node проект
 npm init
 
@@ -66,3 +59,9 @@ npm run build
 git remote add NAME URL >/dev/null 2>&1 || git remote set-url NAME URL
 
 То есть если ветка существует - просто апдейтнуть урл, если нет - то добавить.
+
+### media для адаптива
+@media (min-width: px) {
+        . { 
+        }
+    }
