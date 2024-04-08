@@ -1,33 +1,29 @@
-/* 
-product.html#3
-*/
-
 export function choiceCity() {
     const citys = [
         {
-            name: "Москва",
-            "subdomain": "msk"
-        },
-        {
-            name: "Санкт-Петербург",
-            "subdomain": "spb"
+            name: "Владикавказ",
+            "subdomain": "vladikavkaz"
         },
         {
             name: "Калуга",
             "subdomain": "kaluga"
         },
         {
-            name: "Новосибирск",
-            "subdomain": "novosibirsk"
-        },
-        {
-            name: "Владикавказ",
-            "subdomain": "vladikavkaz"
-        },
-        {
             name: "Казань",
             "subdomain": "kazan"
         },
+        {
+            name: "Москва",
+            "subdomain": "msk"
+        },
+        {
+            name: "Новосибирск",
+            "subdomain": "novosibirsk"
+        }, 
+        {
+            name: "Санкт-Петербург",
+            "subdomain": "spb"
+        },      
     ];
 
     const cityNode = document.querySelector("[data-choice-city]");
