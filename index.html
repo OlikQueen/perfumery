@@ -18,59 +18,208 @@
     <!-- // все эл-ты кроме последнего mardin-right  -->
     <!-- // пер-му flex: 1 -->
     <!-- </div> -->
-    <div class="header__d header-d">
-      <div class="header-d__row">
-        <ul class="burgerMenu__ul">
-          <li class="burgerMenu__info  info">
-            <svg class=" info__img  ">
-              <use xlink:href="#vector"></use>
-            </svg>
-            <p class="info__p text">
-              Ваш город: Москва
-            </p>
-          </li>
 
-          <li class="burgerMenu__info info">
-            <svg class="info__img">
-              <use xlink:href="#phone"></use>
-            </svg>
-            <p class="info__p text">
-              7(937) 136 - 77 - 66
-            </p>
-          </li>
+    <div class="header__row header__row--first">
 
-        </ul>
+      <div class="header__group header__group--first info">
+        <svg class="info__svg">
+          <use xlink:href="#vector"></use>
+        </svg>
+        <p class="info__p">
+          Ваш город: Москва
+        </p>
+      </div>
 
-        <a class="burgerMenu__hoverP info__p text">
+      <div class="header__group">
+        <a class="links__a">
           Бонусы
         </a>
+      </div>
 
-        <a class="burgerMenu__hoverP info__p text">
+      <div class="header__group">
+        <a class="links__a">
           Документация
         </a>
+      </div>
 
-        <a class="burgerMenu__hoverP info__p text">
+      <div class="header__group">
+        <a class="links__a">
           О нас
         </a>
       </div>
+
+      <!-- <div class="header__group header__group--ul">
+        <ul class="links">
+          <li class="links__li">
+            <a class="links__a">
+              Бонусы
+            </a>
+          </li>
+          <li class="links__li">
+            <a class="links__a">
+              Документация
+            </a>
+          </li>
+          <li class="links__li">
+            <a class="links__a">
+              О нас
+            </a>
+          </li>
+        </ul>
+      </div> -->
+
+      <div class="header__group info">
+        <svg class="info__svg">
+          <use xlink:href="#phone"></use>
+        </svg>
+        <a class="info__p" href="tel:+79371367766">
+          7(937) 136 - 77 - 66
+        </a>
+      </div>
     </div>
+
+
+
+    <div class="header__row">
+
+      <div class="header__group header__group--logo">
+        <a href="#" class="logo">
+          <svg class="logo__svg">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="header__group header__group--serch">
+        <div class="dropdown">
+          <button class="dropdown__btn btn">
+            <span class="dropdown__dropd-img"></span>
+            Каталог
+          </button>
+          <nav class="dropdown__content nav">
+            <li class="dropdown__li nav__li">
+              <a class="nav__btn btn ">
+                Мужские
+              </a>
+            </li>
+            <li class=" dropdown__li nav__li">
+              <a class="nav__btn btn ">
+                Женские
+              </a>
+            </li>
+            <li class="dropdown__li nav__li">
+              <a class="nav__btn btn ">
+                Унисекс
+              </a>
+            </li>
+          </nav>
+        </div>
+
+        <div class="modal-box--i modal-box__container">
+          <input type="text" class="modal-box__input" placeholder="какой парфюм хотите найти?">
+          <button class="i">
+            <svg class="modal-box__icon">
+              <use xlink:href="#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="header__group uself">
+        <a href="#" class="uself__a">
+          <svg class="user">
+            <use xlink:href="#user"></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="header__group uself">
+        <a href="#" class="uself__a">
+          <svg class="korzina">
+            <use xlink:href="#korzina"></use>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
   </header>
 
-  <!-- <a href="product.html#1"></a>
-    <a href="product.html#2"></a>
-    <a href="product.html#3"></a>
-    <a href="product.html#4"></a>
-    <a href="product.html#5"></a>
-    <a href="product.html#6"></a> -->
-
-  <!-- /* 
-product.html#3
-*/ -->
+  
 
 
 
   <!-- svg sprite -->
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:0; height: 0;">
+
+    <symbol id="korzina" viewBox="0 0 40 40">
+      <defs>
+        <linearGradient id="paint_linear_173_11163_0" x1="7.075827" y1="12.523935" x2="12.776037" y2="13.352724"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#C09E6C" />
+          <stop offset="0.426246" stop-color="#FFEBCC" />
+          <stop offset="1.000000" stop-color="#BF936B" />
+        </linearGradient>
+        <linearGradient id="paint_linear_173_11164_0" x1="-0.536013" y1="7.523811" x2="20.000000" y2="16.142864"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#C09E6C" />
+          <stop offset="0.426246" stop-color="#FFEBCC" />
+          <stop offset="1.000000" stop-color="#BF936B" />
+        </linearGradient>
+        <linearGradient id="paint_linear_173_11165_0" x1="3.678394" y1="6.738094" x2="16.000000" y2="2.428566"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#C09E6C" />
+          <stop offset="0.426246" stop-color="#FFEBCC" />
+          <stop offset="1.000000" stop-color="#BF936B" />
+        </linearGradient>
+      </defs>
+      <path id="Vector"
+        d="M7.98 12.28C7.78 12.28 7.58 12.36 7.44 12.5C7.3 12.65 7.22 12.84 7.22 13.05C7.22 13.25 7.3 13.45 7.44 13.59C7.58 13.73 7.78 13.82 7.98 13.82L12.01 13.82C12.21 13.82 12.41 13.73 12.55 13.59C12.69 13.45 12.77 13.25 12.77 13.05C12.77 12.84 12.69 12.65 12.55 12.5C12.41 12.36 12.21 12.28 12.01 12.28L7.98 12.28Z"
+        fill="url(#paint_linear_173_11163_0)" fill-opacity="1.000000" fill-rule="nonzero" />
+      <path id="Vector"
+        d="M14.39 5L15.53 5.04C15.96 5.06 16.36 5.09 16.71 5.15C17.78 5.3 18.66 5.64 19.29 6.43C19.91 7.23 20.05 8.18 19.98 9.28C19.91 10.34 19.62 11.68 19.27 13.36L18.82 15.54C18.58 16.67 18.39 17.58 18.14 18.3C17.89 19.05 17.56 19.66 16.99 20.13C16.43 20.6 15.77 20.81 15 20.9C14.26 21 13.34 21 12.21 21L7.78 21C6.64 21 5.73 21 4.99 20.9C4.22 20.81 3.56 20.6 3 20.13C2.43 19.66 2.1 19.05 1.85 18.3C1.6 17.58 1.41 16.67 1.17 15.54L0.72 13.36C0.37 11.68 0.08 10.34 0.01 9.28C-0.06 8.18 0.08 7.23 0.7 6.43C1.33 5.64 2.21 5.3 3.28 5.15C3.63 5.1 4.03 5.06 4.46 5.04L7.33 5L12.66 5C13.06 5 14.02 4.99 14.39 5ZM3.67 6.66L3.26 7.49C3.22 7.58 3.19 7.68 3.18 7.78C3.17 7.88 3.19 7.98 3.22 8.08C3.25 8.18 3.3 8.27 3.36 8.34C3.43 8.42 3.51 8.49 3.6 8.53C3.69 8.58 3.79 8.6 3.89 8.61C3.98 8.62 4.08 8.6 4.18 8.57C4.27 8.54 4.36 8.49 4.44 8.42C4.51 8.35 4.57 8.27 4.62 8.18L5.41 6.55C5.99 6.54 6.64 6.54 7.39 6.54L12.6 6.54C13.35 6.54 14 6.54 14.58 6.55L15.37 8.18C15.46 8.36 15.62 8.5 15.81 8.56C16 8.63 16.21 8.61 16.39 8.52C16.57 8.43 16.7 8.27 16.77 8.08C16.83 7.88 16.82 7.67 16.73 7.49L16.32 6.66L16.5 6.68C17.39 6.81 17.83 7.05 18.11 7.41C18.39 7.76 18.52 8.23 18.47 9.12L1.52 9.12C1.47 8.23 1.6 7.76 1.88 7.41C2.16 7.05 2.6 6.81 3.49 6.68L3.67 6.66ZM2.21 13.1C2.04 12.29 1.88 11.48 1.73 10.67L18.27 10.67C18.11 11.48 17.95 12.29 17.78 13.1L17.35 15.16C17.1 16.35 16.92 17.18 16.71 17.8C16.51 18.4 16.31 18.71 16.04 18.93C15.78 19.15 15.43 19.29 14.82 19.37C14.18 19.45 13.36 19.45 12.16 19.45L7.83 19.45C6.63 19.45 5.81 19.45 5.17 19.37C4.56 19.29 4.21 19.15 3.95 18.93C3.68 18.71 3.48 18.4 3.28 17.8C3.07 17.18 2.89 16.35 2.64 15.16L2.21 13.1Z"
+        fill="url(#paint_linear_173_11164_0)" fill-opacity="1.000000" fill-rule="evenodd" />
+      <path id="Vector" d="M16 8C16 8 14 0 10 0C6 0 4 8 4 8" stroke="url(#paint_linear_173_11165_0)"
+        stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round" />
+    </symbol>
+
+
+
+    <symbol id="user" viewBox="0 0 40 40">
+      <defs>
+        <clipPath id="clip173_11162">
+          <rect id="user-2" rx="4.000000" width="40.000000" height="40.000000" fill="white" fill-opacity="0" />
+        </clipPath>
+        <linearGradient id="paint_linear_173_11160_0" x1="14.731994" y1="12.577381" x2="25.000000" y2="17.964289"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#C09E6C" />
+          <stop offset="0.426246" stop-color="#FFEBCC" />
+          <stop offset="1.000000" stop-color="#BF936B" />
+        </linearGradient>
+        <linearGradient id="paint_linear_173_11161_0" x1="11.571190" y1="22.261906" x2="28.000000" y2="26.571430"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#C09E6C" />
+          <stop offset="0.426246" stop-color="#FFEBCC" />
+          <stop offset="1.000000" stop-color="#BF936B" />
+        </linearGradient>
+      </defs>
+      <rect id="user-2" rx="4.000000" width="40.000000" height="40.000000" fill="#FFFFFF" fill-opacity="0" />
+      <g clip-path="url(#clip173_11162)">
+        <path id="Vector"
+          d="M20 21C17.23 21 15 18.76 15 16C15 13.23 17.23 11 20 11C22.76 11 25 13.23 25 16C25 18.76 22.76 21 20 21Z"
+          stroke="url(#paint_linear_173_11160_0)" stroke-opacity="1.000000" stroke-width="2.000000"
+          stroke-linejoin="round" />
+        <path id="Vector"
+          d="M28 29C28 26.87 27.15 24.84 25.65 23.34C24.15 21.84 22.12 21 20 21C17.87 21 15.84 21.84 14.34 23.34C12.84 24.84 12 26.87 12 29"
+          stroke="url(#paint_linear_173_11161_0)" stroke-opacity="1.000000" stroke-width="2.000000"
+          stroke-linejoin="round" stroke-linecap="round" />
+      </g>
+    </symbol>
+
+
+
+
+
     <symbol id="adres" viewBox="0 0 40 40" fill="none">
       <defs>
         <linearGradient id="paint_linear_8_29_0" x1="10.517590" y1="10.785713" x2="28.999998" y2="23.714294"
