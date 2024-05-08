@@ -1,0 +1,60 @@
+@import "../mixins";
+
+.slider {
+
+    // .slider__background
+
+    &__background {
+        position: absolute;
+
+        height: 100%;
+        width: 100%;
+
+
+        [data-item] {
+            position: absolute;
+            /* Переполняющее содержимое не отображается. */
+            overflow: hidden;
+            /* непрозрачность */
+            opacity: 0;
+            transition: all 2s;
+
+            height: 100%;
+            width: 100%;
+
+            /* текущий слайд */
+            &.active {
+                z-index: 10;
+                overflow: visible;
+                opacity: 1;
+                transition: all 2s;
+            }
+        }
+
+        &__dots {
+            position: absolute;
+            display: flex;
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            gap: 15px;
+            z-index: 10;
+
+            a {
+                width: 15px;
+                height: 15px;
+
+                background-color: #fff;
+                border-radius: 50%;
+
+                &.active {
+                    background-color: grey;
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+
+
+        }
+    }
+}
