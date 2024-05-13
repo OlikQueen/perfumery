@@ -8,6 +8,3 @@ modal()
 
 import { choiceCity } from './src/js/choice-city.js'
 choiceCity()
-
-import { slider } from "./src/js/slider.js";
-slider();
