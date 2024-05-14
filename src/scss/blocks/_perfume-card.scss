@@ -10,6 +10,16 @@
 
     padding: 10px 0 0 0;
 
+    &--aventus {
+        background: url(/img/aventus.png);
+        background-size: cover;
+    }
+
+    &--narcotiqe {
+        background: url(/img/narcotiqe.png);
+        background-size: cover;
+    }
+
     &__inner {
         width: calc(100% - 44px);
         height: calc(100% - 10px);

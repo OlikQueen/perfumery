@@ -1,20 +1,27 @@
 @import "../mixins";
 
 .famousPerfum {
+    padding-left: 20px;
 
-    // .famousPerfum__title
-
-    &__title {}
-
-    // .famousPerfum__scroll
+    &__title {
+        margin-bottom: 20px;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0%;
+        color: #D6B88D;
+    }
 
     &__scroll {
-        overflow-x: scroll;
-        overflow-y: hidden;
-        white-space: nowrap;
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        overflow-y: auto;
+        width: 100%;
     }
-}
 
-.pr {
-    display: inline-block;
+    &__perfume-card {
+        width: 297px;
+    }
 }
