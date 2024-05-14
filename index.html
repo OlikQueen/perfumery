@@ -6,6 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/logo.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script type="module" src="/main.js" defer></script>
+  <!-- <script src="/src/js/slider.js" defer></script> -->
   <title>parfumery</title>
 </head>
 
@@ -14,10 +15,6 @@
         на мобильном первая линия none, она находится в бургере
         на десктопе видны обе линии-->
   <header class="header">
-    <!-- <div class="header__m header-m"> -->
-    <!-- // все эл-ты кроме последнего mardin-right  -->
-    <!-- // пер-му flex: 1 -->
-    <!-- </div> -->
 
     <div class="header__row header__row--first">
 
@@ -107,7 +104,98 @@
         </div>
       </div>
 
-      <div class="header__group uself">
+      <div class="header__group header__group--serchMobail">
+
+        <svg class="header__burgerIcon" id="burgerIcon">
+          <use xlink:href="#burgerM"></use>
+        </svg>
+
+        <div class="burgerMenu">
+          <!-- burgerMenu затемнение 100на100-->
+          <div class="burgerMenu__row">
+
+            <div class="burgerMenu__head">
+              <svg class="burgerMenu__cross" id="crs">
+                <use xlink:href="#cross"></use>
+              </svg>
+              <svg class="burgerMenu__logo">
+                <use xlink:href="#logo"></use>
+              </svg>
+            </div>
+
+            <nav class="burgerMenu__nav nav">
+              <li class="nav__li">
+                <a class="nav__btn btn ">
+                  Мужские
+                </a>
+              </li>
+              <li class="nav__li">
+                <a class="nav__btn btn ">
+                  Женские
+                </a>
+              </li>
+              <li class="nav__li">
+                <a class="nav__btn btn ">
+                  Унисекс
+                </a>
+              </li>
+            </nav>
+
+            <div class="burgerMenu__footer">
+              <ul class="burgerMenu__ul">
+                <li class="burgerMenu__info  info">
+                  <svg class=" info__img  ">
+                    <use xlink:href="#vector"></use>
+                  </svg>
+                  <p class="info__p text">
+                    Ваш город: Москва
+                  </p>
+                </li>
+
+                <li class="burgerMenu__info info">
+                  <svg class="info__img">
+                    <use xlink:href="#phone"></use>
+                  </svg>
+                  <p class="info__p text">
+                    7(937) 136 - 77 - 66
+                  </p>
+                </li>
+
+              </ul>
+
+              <a class="burgerMenu__hoverP info__p text">
+                Бонусы
+              </a>
+
+              <a class="burgerMenu__hoverP info__p text">
+                Документация
+              </a>
+
+              <a class="burgerMenu__hoverP info__p text">
+                О нас
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+
+        <a class="modal-target" data-modal-target data-key="search">
+          <svg class="modal-target__search">
+            <use xlink:href="#search"></use>
+          </svg>
+        </a>
+        <div class="modal-box" data-modal-box data-key="search">
+          <div class="modal-box__container">
+            <input type="text" class="modal-box__input" placeholder="какой парфюм хотите найти?">
+            <svg class="modal-box__icon">
+              <use xlink:href="#search"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__group header__group--uself">
         <a href="#" class="header__uselfA">
           <svg class="user">
             <use xlink:href="#user"></use>
@@ -126,8 +214,103 @@
   </header>
 
 
+  <!-- <section class="banner">
+    <div class="banner__slider slider" data-timeout="2000" data-dotted data-infinity="1">
+      <picture class="slider__img slider--active">
+        <source srcset="imag/parfum_left_one.png" media="(min-width: 1024px)" />
+        <img src="imag/mbParf_One.png" alt="" class="slide-img">
+      </picture>
+
+      <picture class="slider__img slider--active">
+        <source srcset="imag/parfum_left_one.png" media="(min-width: 1024px)" />
+        <img src="imag/mbParf_One.png" alt="" class="slide-img">
+      </picture>
+    </div>
+
+  </section> -->
+
+  <!-- <section class="famousPerfum">
+    <h3 class="famousPerfum__title">
+      Популярные ароматы
+    </h3>
+
+    <div class="famousPerfum__scroll">
+      <div style="width: 297px;" class="pr">
+        <div class="perfume-card">
+          <div class="perfume-card__inner">
+            <h3 class="perfume-card__h3">
+              Для неё
+            </h3>
+            <div class="perfume-card__wrap">
+              <h3 class="perfume-card__h3 perfume-card__h3--weight">
+                Victoria Secret Bombshell
+              </h3>
+              <button type="button" class="btn">
+                <p class="btn__p">в корзину</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 297px;" class="pr">
+        <div class="perfume-card">
+          <div class="perfume-card__inner">
+            <h3 class="perfume-card__h3">
+              Для неё
+            </h3>
+            <div class="perfume-card__wrap">
+              <h3 class="perfume-card__h3 perfume-card__h3--weight">
+                Victoria Secret Bombshell
+              </h3>
+              <button type="button" class="btn">
+                <p class="btn__p">в корзину</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 297px;" class="pr">
+        <div class="perfume-card">
+          <div class="perfume-card__inner">
+            <h3 class="perfume-card__h3">
+              Для неё
+            </h3>
+            <div class="perfume-card__wrap">
+              <h3 class="perfume-card__h3 perfume-card__h3--weight">
+                Victoria Secret Bombshell
+              </h3>
+              <button type="button" class="btn">
+                <p class="btn__p">в корзину</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
 
+
+  </section>
+
+  <section class="bonuses">
+    <h3 class="bonuses__top">
+
+    </h3>
+    <div class="bonuses__content">
+      <p class="bonuses__title">
+
+      </p>
+      <p class="bonuses__text">
+
+      </p>
+      <a href="" class="bonuses__link">
+        
+      </a>
+    </div>
+  </section> -->
 
 
   <!-- svg sprite -->

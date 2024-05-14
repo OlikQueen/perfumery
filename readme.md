@@ -65,3 +65,7 @@ git remote add NAME URL >/dev/null 2>&1 || git remote set-url NAME URL
         . { 
         }
     }
+
+    @include mq( размер экрана ) {
+            
+        }

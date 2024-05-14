@@ -1,0 +1,20 @@
+@import "../mixins";
+
+.famousPerfum {
+
+    // .famousPerfum__title
+
+    &__title {}
+
+    // .famousPerfum__scroll
+
+    &__scroll {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+}
+
+.pr {
+    display: inline-block;
+}

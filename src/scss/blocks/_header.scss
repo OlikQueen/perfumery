@@ -11,11 +11,24 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
+
+        &--first {
+            display: none;
+
+            @include mq(md) {
+                display: flex;
+            }
+        }
+
+        &--two {
+            display: flex;
+        }
     }
 
     &__group {
         display: flex;
         white-space: nowrap;
+
 
         &--first {
             flex: 0;
@@ -40,14 +53,40 @@
         &--coll {
             flex: 0;
         }
-    }
 
+        &--serch {
+            display: none;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
 
-    &__group--serch {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 100%;
+            @include mq(md) {
+                display: flex;
+            }
+        }
+
+        &--logo {
+            order: 1;
+
+            @include mq(md) {
+                order: 0;
+            }
+        }
+
+        &--serchMobail {
+
+            @include mq(md) {
+                display: none;
+            }
+        }
+
+        &--uself {
+            order: 1;
+
+            @include mq(md) {
+                order: 0;
+            }
+        }
     }
 
     &__modal-box {
@@ -61,9 +100,14 @@
         }
     }
 
-    &__uselfA svg{
+    &__uselfA svg {
         width: 40px;
         height: 36px;
+    }
+
+    &__burgerIcon {
+        width: 40px;
+        height: 40px;
     }
 
 }
