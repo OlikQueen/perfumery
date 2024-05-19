@@ -1,18 +1,26 @@
 @import "../mixins";
 
-// .inform {
+.inform {
+    display: flex;
+    flex-wrap: wrap ;
+    gap: 20px;
 
-//     &__group {
-//         &--time {
-//             // @include mq(md) {
-                
-//             // }
-//         }
-//         &--contackts {
+    &__group {
+        @include mq(md) {
+            
+        }
 
-//         }
-//         &--info {
+        &--time {
+            display: inline-block;
 
-//         }
-//     }
-// }
+        }
+
+        &--contackts {
+            display: inline-block;
+        }
+
+        &--info {
+            display: inline-block;
+        }
+    }
+}

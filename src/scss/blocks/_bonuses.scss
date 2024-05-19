@@ -18,8 +18,9 @@
     &__wap {
         background-image: url(/img/bonus_bg.png);
         background-position: center;
-        height: 280px;
-        width: 100%;
+        background-size: cover;
+        
+        min-height: 280px;
 
         position: relative;
     }

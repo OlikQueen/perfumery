@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="page">
 
 <head>
   <meta charset="UTF-8" />
@@ -11,224 +11,243 @@
 </head>
 
 <body>
-  <header class="header">
+  <div class="page__header">
 
-    <div class="header__row header__row--first">
+    <header class="header">
 
-      <div class="header__group header__group--first info">
-        <svg class="info__svg">
-          <use xlink:href="#vector"></use>
-        </svg>
-        <p class="info__p">
-          Ваш город: Москва
-        </p>
-      </div>
+      <div class="header__row header__row--first">
 
-      <div class="header__group header__group--ul">
-        <ul class="links">
-          <li class="links__li">
-            <a class="links__a">
-              Бонусы
-            </a>
-          </li>
-          <li class="links__li">
-            <a class="links__a">
-              Документация
-            </a>
-          </li>
-          <li class="links__li">
-            <a class="links__a">
-              О нас
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="header__group header__group--coll info">
-        <svg class="info__svg">
-          <use xlink:href="#phone"></use>
-        </svg>
-        <a class="info__p" href="tel:+79371367766">
-          7(937) 136 - 77 - 66
-        </a>
-      </div>
-    </div>
-
-
-
-    <div class="header__row header__row--two">
-
-      <div class="header__group header__group--logo">
-        <a href="#" class="logo">
-          <svg class="logo__svg">
-            <use xlink:href="#logo"></use>
+        <div class="header__group header__group--first info">
+          <svg class="info__svg">
+            <use xlink:href="#vector"></use>
           </svg>
-        </a>
-      </div>
-
-      <div class="header__group header__group--serch">
-        <div class="dropdown">
-          <button class="dropdown__btn btn">
-            <span class="dropdown__dropd-img"></span>
-            Каталог
-          </button>
-          <nav class="dropdown__content nav">
-            <li class="dropdown__li nav__li">
-              <a class="nav__btn btn ">
-                Мужские
-              </a>
-            </li>
-            <li class=" dropdown__li nav__li">
-              <a class="nav__btn btn ">
-                Женские
-              </a>
-            </li>
-            <li class="dropdown__li nav__li">
-              <a class="nav__btn btn ">
-                Унисекс
-              </a>
-            </li>
-          </nav>
+          <p class="info__p">
+            Ваш город: Москва
+          </p>
         </div>
 
-        <div class="header__modal-box">
-          <input type="text" class="modal-box__input" placeholder="какой парфюм хотите найти?">
-          <button class="header__modal-box--btn">
-            <svg class="modal-box__icon">
-              <use xlink:href="#search"></use>
+        <div class="header__group header__group--ul">
+          <ul class="links">
+            <li class="links__li">
+              <a class="links__a">
+                Бонусы
+              </a>
+            </li>
+            <li class="links__li">
+              <a class="links__a">
+                Документация
+              </a>
+            </li>
+            <li class="links__li">
+              <a class="links__a">
+                О нас
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header__group header__group--coll info">
+          <svg class="info__svg">
+            <use xlink:href="#phone"></use>
+          </svg>
+          <a class="info__p" href="tel:+79371367766">
+            7(937) 136 - 77 - 66
+          </a>
+        </div>
+      </div>
+
+
+
+      <div class="header__row header__row--two">
+
+        <div class="header__group header__group--logo">
+          <a href="#" class="logo">
+            <svg class="logo__svg">
+              <use xlink:href="#logo"></use>
             </svg>
-          </button>
+          </a>
         </div>
-      </div>
 
-      <div class="header__group header__group--serchMobail">
-
-        <svg class="header__burgerIcon" id="burgerIcon">
-          <use xlink:href="#burgerM"></use>
-        </svg>
-
-        <div class="burgerMenu">
-          <!-- burgerMenu затемнение 100на100-->
-          <div class="burgerMenu__row">
-
-            <div class="burgerMenu__head">
-              <svg class="burgerMenu__cross" id="crs">
-                <use xlink:href="#cross"></use>
-              </svg>
-              <svg class="burgerMenu__logo">
-                <use xlink:href="#logo"></use>
-              </svg>
-            </div>
-
-            <nav class="burgerMenu__nav nav">
-              <li class="nav__li">
+        <div class="header__group header__group--serch">
+          <div class="dropdown">
+            <button class="dropdown__btn btn">
+              <span class="dropdown__dropd-img"></span>
+              Каталог
+            </button>
+            <nav class="dropdown__content nav">
+              <li class="dropdown__li nav__li">
                 <a class="nav__btn btn ">
                   Мужские
                 </a>
               </li>
-              <li class="nav__li">
+              <li class=" dropdown__li nav__li">
                 <a class="nav__btn btn ">
                   Женские
                 </a>
               </li>
-              <li class="nav__li">
+              <li class="dropdown__li nav__li">
                 <a class="nav__btn btn ">
                   Унисекс
                 </a>
               </li>
             </nav>
+          </div>
 
-            <div class="burgerMenu__footer">
-              <ul class="burgerMenu__ul">
-                <li class="burgerMenu__info  info">
-                  <svg class=" info__img  ">
-                    <use xlink:href="#vector"></use>
-                  </svg>
-                  <p class="info__p text">
-                    Ваш город: Москва
-                  </p>
-                </li>
-
-                <li class="burgerMenu__info info">
-                  <svg class="info__img">
-                    <use xlink:href="#phone"></use>
-                  </svg>
-                  <p class="info__p text">
-                    7(937) 136 - 77 - 66
-                  </p>
-                </li>
-
-              </ul>
-
-              <a class="burgerMenu__hoverP info__p text">
-                Бонусы
-              </a>
-
-              <a class="burgerMenu__hoverP info__p text">
-                Документация
-              </a>
-
-              <a class="burgerMenu__hoverP info__p text">
-                О нас
-              </a>
-            </div>
-
+          <div class="header__modal-box">
+            <input type="text" class="modal-box__input" placeholder="какой парфюм хотите найти?">
+            <button class="header__modal-box--btn">
+              <svg class="modal-box__icon">
+                <use xlink:href="#search"></use>
+              </svg>
+            </button>
           </div>
         </div>
 
+        <div class="header__group header__group--serchMobail">
 
-        <a class="modal-target" data-modal-target data-key="search">
-          <svg class="modal-target__search">
-            <use xlink:href="#search"></use>
+          <svg class="header__burgerIcon" id="burgerIcon">
+            <use xlink:href="#burgerM"></use>
           </svg>
-        </a>
-        <div class="modal-box" data-modal-box data-key="search">
-          <div class="modal-box__container">
-            <input type="text" class="modal-box__input" placeholder="какой парфюм хотите найти?">
-            <svg class="modal-box__icon">
+
+          <div class="burgerMenu">
+            <!-- burgerMenu затемнение 100на100-->
+            <div class="burgerMenu__row">
+
+              <div class="burgerMenu__head">
+                <svg class="burgerMenu__cross" id="crs">
+                  <use xlink:href="#cross"></use>
+                </svg>
+                <svg class="burgerMenu__logo">
+                  <use xlink:href="#logo"></use>
+                </svg>
+              </div>
+
+              <nav class="burgerMenu__nav nav">
+                <li class="nav__li">
+                  <a class="nav__btn btn ">
+                    Мужские
+                  </a>
+                </li>
+                <li class="nav__li">
+                  <a class="nav__btn btn ">
+                    Женские
+                  </a>
+                </li>
+                <li class="nav__li">
+                  <a class="nav__btn btn ">
+                    Унисекс
+                  </a>
+                </li>
+              </nav>
+
+              <div class="burgerMenu__footer">
+                <ul class="burgerMenu__ul">
+                  <li class="burgerMenu__info  info">
+                    <svg class=" info__img  ">
+                      <use xlink:href="#vector"></use>
+                    </svg>
+                    <p class="info__p text">
+                      Ваш город: Москва
+                    </p>
+                  </li>
+
+                  <li class="burgerMenu__info info">
+                    <svg class="info__img">
+                      <use xlink:href="#phone"></use>
+                    </svg>
+                    <p class="info__p text">
+                      7(937) 136 - 77 - 66
+                    </p>
+                  </li>
+
+                </ul>
+
+                <a class="burgerMenu__hoverP info__p text">
+                  Бонусы
+                </a>
+
+                <a class="burgerMenu__hoverP info__p text">
+                  Документация
+                </a>
+
+                <a class="burgerMenu__hoverP info__p text">
+                  О нас
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+
+          <a class="modal-target" data-modal-target data-key="search">
+            <svg class="modal-target__search">
               <use xlink:href="#search"></use>
             </svg>
+          </a>
+          <div class="modal-box" data-modal-box data-key="search">
+            <div class="modal-box__container">
+              <input type="text" class="modal-box__input" placeholder="какой парфюм хотите найти?">
+              <svg class="modal-box__icon">
+                <use xlink:href="#search"></use>
+              </svg>
+            </div>
           </div>
         </div>
+
+        <div class="header__group header__group--uself">
+          <a href="#" class="header__uselfA">
+            <svg class="user">
+              <use xlink:href="#user"></use>
+            </svg>
+          </a>
+
+          <a href="#" class="header__uselfA">
+            <svg class="korzina">
+              <use xlink:href="#korzina"></use>
+            </svg>
+          </a>
+        </div>
+
       </div>
 
-      <div class="header__group header__group--uself">
-        <a href="#" class="header__uselfA">
-          <svg class="user">
-            <use xlink:href="#user"></use>
-          </svg>
-        </a>
+    </header>
 
-        <a href="#" class="header__uselfA">
-          <svg class="korzina">
-            <use xlink:href="#korzina"></use>
-          </svg>
-        </a>
-      </div>
+  </div>
 
+
+  <!-- 
+
+  .slider {
+
+    &--main {
+      
+    }
+  }
+  
+ -->
+
+
+  <section class="banner">
+
+    <div class="slider slider--main" data-timeout="4000" data-dotted data-infinity="1">
+      <img data-item src="imag/mbParf_One.png" alt="1">
+      <img data-item src="imag/mbParf_Two.png" alt="2">
+      <img data-item src="imag/mbParf_The.png" alt="3">
+      <img data-item src="imag/mbParf_Four.png" alt="4">
+      <img data-item src="imag/mbParf_Five.png" alt="5">
     </div>
 
-  </header>
+    <h1 class="banner__title">
+      Оптовая продажа люксовой парфюмерии с маржой до 100% и доставкой по РФ и СНГ
+    </h1>
 
+    <h3 class="banner__botton">
+      В наличии более <span class="banner__size">500</span> ароматов
+    </h3>
+    
+  </section>
 
-
-
-  <!-- <section class="banner">
-    <div class="banner__slider slider" data-timeout="2000" data-dotted data-infinity="1">
-      <picture class="slider__img slider--active">
-        <source srcset="imag/parfum_left_one.png" media="(min-width: 1024px)" />
-        <img src="imag/mbParf_One.png" alt="" class="slide-img">
-      </picture>
-
-      <picture class="slider__img slider--active">
-        <source srcset="imag/parfum_left_one.png" media="(min-width: 1024px)" />
-        <img src="imag/mbParf_One.png" alt="" class="slide-img">
-      </picture>
-    </div>
-
-
-  </section> -->
-
+  <!-- поменять через дефис -->
   <section class="famousPerfum">
     <h3 class="famousPerfum__title">
       Популярные ароматы
@@ -290,12 +309,44 @@
 
   </section>
 
+  <!-- адаптировать для большего контента -->
+
+  <!-- <div class="bonuses">
+
+    <div class="bonuses__top">
+      <h3 class="title">
+        Бонусы от покупок
+      </h3>
+    </div>
+
+    <div class="bonuses__content">
+      <div class="banner">
+        <p class="bonuses__title">
+          Получайте кэшбэк за покупки
+        </p>
+        <p class="bonuses__text">
+          Бонусные баллы за регистрацию и покупки
+        </p>
+        <a href="" class="bonuses__link btn">
+          Узнать подробнее
+        </a>
+      </div>
+    </div>
+
+  </div> -->
+
   <section class="bonuses">
-    <h3 class="bonuses__top">
-      Бонусы от покупок
-    </h3>
+
+    <div class="bonuses__top">
+      <h3 class="title">
+        Бонусы от покупок
+      </h3>
+    </div>
+
     <div class="bonuses__wap">
+
       <div class="bonuses__content">
+        
         <p class="bonuses__title">
           Получайте кэшбэк за покупки
         </p>
@@ -323,6 +374,7 @@
     <div class="footer__content">
 
       <div class="footer__inform inform">
+
         <div class="inform__group inform__group--time">
           <div class="inform__info info">
             <svg class="info__img">
@@ -341,6 +393,7 @@
             </p>
           </div>
         </div>
+
         <div class="inform__group inform__group--contackts">
           <div class="inform__info info">
             <svg class="info__img">
@@ -367,6 +420,7 @@
             </p>
           </div>
         </div>
+
         <div class="inform__group inform__group--info">
           <div class="inform__info info">
             <svg class="info__img">
@@ -377,6 +431,7 @@
             </p>
           </div>
         </div>
+
       </div>
 
     </div>

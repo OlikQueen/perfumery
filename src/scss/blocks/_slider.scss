@@ -1,31 +1,74 @@
 @import "../mixins";
 
+.banner {
+    margin-bottom: 490px;
+    position: relative;
 
+    &__title {
+        color: #D6B88D;
 
-.slider {
-    overflow-x: hidden;
-
-
-    &__img {
-
-        position: absolute;
-        //спрятать эл-ты
-        overflow: hidden;
-        opacity: 0;
-        transition: all 2s;
+        display: block;
+        position: relative;
+        z-index: 10;
+        padding: 30px;
+        padding-left: 20px;
     }
 
-    // текущий слайд
-    &--active {
+    &__botton {
+        color: #D6B88D;
+        position: relative;
         z-index: 10;
-        overflow: visible;
-        opacity: 1;
-        transition: all 2s;
+        bottom: 0;
     }
 }
 
-.slide-img {
-    object-fit: fill;
-    width: 100vw;
+
+.slider {
+    position: absolute;
+    height: 500px;
+    // новое
+    overflow: hidden;
+    width: 100%
+}
+
+.slider [data-item] {
+    position: absolute;
+    // overflow: hidden;
+    opacity: 0;
+    transition: all 2s;
     height: 100%;
+    width: 100%;
+    // новое
+    object-fit: cover;
+    overflow: visible;
+}
+
+.slider [data-item].active {
+    z-index: 10;
+    overflow: visible;
+    opacity: 1;
+    transition: all 2s
+}
+
+.slider__dots {
+    position: absolute;
+    display: flex;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    gap: 15px;
+    z-index: 10
+}
+
+.slider__dots a {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%
+}
+
+.slider__dots a.active {
+    background-color: gray;
+    width: 15px;
+    height: 15px
 }
