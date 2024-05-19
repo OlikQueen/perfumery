@@ -1,25 +1,24 @@
 @import "../mixins";
 
 .banner {
-    margin-bottom: 490px;
+    margin-bottom: 130px;
     position: relative;
 
+    &__content {
+        text-align: center;
+        padding-inline: 20px;
+        padding-top: 30px;
+
+        color: #D6B88D;
+        position: relative;
+        z-index: 10;
+    }
+
     &__title {
-        color: #D6B88D;
-
-        display: block;
-        position: relative;
-        z-index: 10;
-        padding: 30px;
-        padding-left: 20px;
+        margin-bottom: 260px;
     }
 
-    &__botton {
-        color: #D6B88D;
-        position: relative;
-        z-index: 10;
-        bottom: 0;
-    }
+    // &__botton {}
 }
 
 
@@ -53,6 +52,7 @@
 .slider__dots {
     position: absolute;
     display: flex;
+    align-items: center;
     bottom: 5%;
     left: 50%;
     transform: translate(-50%);
@@ -63,12 +63,21 @@
 .slider__dots a {
     width: 15px;
     height: 15px;
-    background-color: #fff;
-    border-radius: 50%
+    border-radius: 50%;
+    border: 1px solid #D6B88D;
 }
 
 .slider__dots a.active {
-    background-color: gray;
-    width: 15px;
-    height: 15px
+    background-color: #D6B88D;
+}
+
+.slider__dots a:first-child,
+.slider__dots a:last-child {
+    width: 10px;
+    height: 10px;
+}
+
+.slider__dots a:nth-child(3) {
+    width: 20px;
+    height: 20px;
 }

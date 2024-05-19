@@ -3,8 +3,10 @@
 
 .header {
     padding-inline: 30px;
-    height: 132px;
+    height: auto;
     margin-bottom: 40px;
+
+    color: rgb(192, 158, 108);
 
     &__row {
         width: 100%;
@@ -41,18 +43,29 @@
             & ul {
                 display: flex;
                 justify-content: flex-end;
-                color: rgb(192, 158, 108);
                 width: 100%;
                 flex-direction: row;
 
                 & li {
                     margin-right: 26px;
+
+                    list-style-type: none;
                 }
             }
         }
 
         &--coll {
             flex: 0;
+
+            & a{
+                text-decoration: none;
+                color: inherit;
+            }
+
+            & a:hover,
+            & a:active{
+              text-decoration: underline;
+            }
         }
 
         &--serch {
@@ -69,6 +82,8 @@
         &--logo {
             order: 1;
 
+
+
             @include mq(md) {
                 order: 0;
             }
@@ -83,6 +98,23 @@
 
         &--uself {
             order: 1;
+
+
+
+            & a {
+                width: 40px;
+                height: 40px;
+
+                & svg {
+                    width: 40px;
+                    height: 40px;
+
+                    & use {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
 
             @include mq(md) {
                 order: 0;
@@ -106,14 +138,13 @@
         height: 36px;
     }
 
-    &__burgerIcon {
+    &__burgerIcon use {
         width: 40px;
         height: 40px;
     }
 
-}
-
-.logo__svg {
-    width: 80px;
-    height: 76px;
+    &__burgerIcon {
+        width: 40px;
+        height: 40px;
+    }
 }
