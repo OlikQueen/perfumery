@@ -215,27 +215,36 @@
   </div>
 
 
-  <!-- 
-
-  .slider {
-
-    &--main {
-      
-    }
-  }
-  
- -->
-
   <div class="page__banner">
-
     <section class="banner">
 
-      <div class="slider slider--main" data-timeout="4000" data-dotted data-infinity="1">
-        <img data-item src="imag/mbParf_One.png" alt="1">
-        <img data-item src="imag/mbParf_Two.png" alt="2">
-        <img data-item src="imag/mbParf_The.png" alt="3">
-        <img data-item src="imag/mbParf_Four.png" alt="4">
-        <img data-item src="imag/mbParf_Five.png" alt="5">
+      <div class="slider" data-timeout="4000" data-dotted data-infinity="1">
+
+        <picture>
+          <source srcset="imag/desctopParf_One.png" media="(min-width: 768px)" />
+          <img src="imag/mbParf_One.png" alt="" data-item>
+        </picture>
+
+        <picture>
+          <source srcset="imag/desctopParf_Two.png" media="(min-width: 768px)" />
+          <img src="imag/mbParf_Two.png" alt="" data-item>
+        </picture>
+
+        <picture>
+          <source srcset="imag/desctopParf_Thre.png" media="(min-width: 768px)" />
+          <img src="imag/mbParf_The.png" alt="" data-item>
+        </picture>
+
+        <picture>
+          <source srcset="imag/desctopParf_Four.png" media="(min-width: 768px)" />
+          <img src="imag/mbParf_Four.png" alt="" data-item>
+        </picture>
+
+        <picture>
+          <source srcset="imag/desctopParf_Five.png" media="(min-width: 768px)" />
+          <img src="imag/mbParf_Five.png" alt="" data-item>
+        </picture>
+
       </div>
 
       <div class="banner__content">
@@ -244,7 +253,7 @@
         </h1>
 
         <h3 class="banner__botton">
-          В наличии более 
+          В наличии более
           <br>
           500 ароматов
         </h3>

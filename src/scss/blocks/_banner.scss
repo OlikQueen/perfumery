@@ -1,0 +1,31 @@
+@import "../mixins";
+
+.banner {
+    margin-bottom: 40px;
+    position: relative;
+
+    &__content {
+        text-align: center;
+        padding-inline: 20px;
+        padding-top: 30px;
+
+        color: #D6B88D;
+        position: relative;
+        z-index: 10;
+
+        @include mq(md) {
+            padding-right: 350px;
+            padding-top: 50px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 260px;
+
+        @include mq(md) {
+            margin-bottom: 60px;
+        }
+    }
+
+    // &__botton {}
+}
