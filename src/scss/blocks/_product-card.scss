@@ -1,7 +1,8 @@
 @import "../mixins";
 
 .product-card {
-    width: 100%;
+    // width: 100%;
+    width: 217px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -15,8 +16,12 @@
 
     &__img {
         border-radius: 4px;
-        margin: auto;
+        // margin: auto;   
+        height: 220px;
+        object-fit: cover;
+        overflow: hidden;
     }
+
 
     &__h4 {
         color: rgb(190, 174, 151);

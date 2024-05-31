@@ -1,0 +1,35 @@
+@import "../mixins";
+
+.showcase {
+
+    // .showcase__title
+
+    &__title {}
+
+    // .showcase__filters
+
+    &__filters {}
+
+    // .showcase__container
+
+    &__container {}
+
+    // .showcase__empty-column
+
+    &__empty-column {}
+
+    // .showcase__content
+
+    &__content {
+        display: flex;
+        // flex-wrap: wrap;
+       
+        // justify-content: center;
+        // gap: 3%;
+        
+    }
+
+    &__product-card{
+       
+    }
+}
