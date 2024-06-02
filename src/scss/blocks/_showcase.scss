@@ -17,28 +17,33 @@
         background-clip: text;
     }
 
-    // .showcase__filters
 
-    &__filters {}
+    // &__filters {}
 
-    // .showcase__container
 
-    &__container {}
+    &__container {
 
-    // .showcase__empty-column
+        @include mq(lg) {
+            display: flex;
+        }
+    }
 
-    &__empty-column {}
 
-    // .showcase__content
+    &__empty-column {
+        @include mq(lg) {
+            width: calc(100%/3);
+        }
+    }
+
 
     &__content {
         display: flex;
         flex-wrap: wrap;
 
-        // justify-content: center;
-        // gap: 3%;
-
+        @include mq(lg) {
+            width: calc(200%/3);
+        }
     }
 
-    &__product-card {}
+    // &__product-card {}
 }

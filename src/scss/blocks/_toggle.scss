@@ -1,0 +1,16 @@
+@import "../mixins";
+
+.toggle {
+    &.is-show {
+
+        &>div {
+            display: block;
+        }
+    }
+
+    & button {}
+
+    &>div {
+        display: none;
+    }
+}
