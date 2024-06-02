@@ -2,9 +2,20 @@
 
 .showcase {
 
-    // .showcase__title
 
-    &__title {}
+    &__title {
+        margin-left: 20px;
+
+        margin-bottom: 20px;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0%;
+        background: $gradient;
+        color: transparent;
+        background-clip: text;
+    }
 
     // .showcase__filters
 
@@ -22,14 +33,12 @@
 
     &__content {
         display: flex;
-        // flex-wrap: wrap;
-       
+        flex-wrap: wrap;
+
         // justify-content: center;
         // gap: 3%;
-        
+
     }
 
-    &__product-card{
-       
-    }
+    &__product-card {}
 }

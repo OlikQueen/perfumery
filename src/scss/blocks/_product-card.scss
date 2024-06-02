@@ -2,7 +2,11 @@
 
 .product-card {
     // width: 100%;
-    width: 217px;
+    // width: 217px;
+    margin: 10px;
+    flex: 1 1;
+    min-width: 217px;
+    max-width: 359px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

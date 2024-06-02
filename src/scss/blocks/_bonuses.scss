@@ -12,7 +12,9 @@
         font-weight: 400;
         line-height: 27px;
         letter-spacing: 0%;
-        color: #D6B88D;
+        background: $gradient;
+        color: transparent;
+        background-clip: text;
     }
 
     &__wap {

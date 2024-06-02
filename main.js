@@ -9,6 +9,8 @@ modal()
 // import { choiceCity } from './src/js/choice-city.js'
 // choiceCity()
 
+import { filters } from './src/js/filters.js'
+filters()
 
 import { slider } from "slider00";
 import './node_modules/slider00/dist/slider00.css';

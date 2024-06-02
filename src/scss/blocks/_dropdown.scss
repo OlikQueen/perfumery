@@ -24,6 +24,7 @@
     &__btn {
         display: flex;
         justify-content: space-around;
+        
 
         &:hover #{$block}__dropd-img,
         &:hover #{$block}__dropd-img::after,
