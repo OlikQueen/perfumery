@@ -1,6 +1,9 @@
 @import "../mixins";
 
 .toggle {
+    margin-bottom: 20px;
+
+
     &.is-show {
 
         &>div {
@@ -8,9 +11,52 @@
         }
     }
 
-    & button {}
+    & button {
+        width: 100%;
+        height: auto;
+        padding-block: 10px;
+        background: rgb(54, 51, 46);
+
+
+
+        color: #D6B88D;
+        // text-align: start;
+        display: flex;
+        align-items: center;
+        // justify-content: space-around;
+    }
 
     &>div {
         display: none;
+    }
+
+    &__openToggleIcon {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        // top: 15px;
+        width: 40px;
+        height: 40px;
+
+        & use {
+            fill: transparent;
+            stroke: #D6B88D;
+        }
+    }
+
+    &__closeToggleIcon {
+        display: none;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        bottom: 215px;
+        width: 40px;
+        height: 40px;
+
+        & use {
+            fill: transparent;
+            stroke: #D6B88D;
+        }
     }
 }
