@@ -8,16 +8,28 @@
 
         &>div {
             display: block;
+
+            & div {
+                & button {
+                    &::after {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
         }
 
-        & button{
-            &::before{
-            
+        & button {
+            &::after {
+                content: "";
+                background-image: url('/img/Vector.svg');
+                position: absolute;
+                width: 14px;
+                height: 8px;
+                right: 20px;
+                transform: rotate(-180deg);
             }
         }
     }
-
-    
 
 
     & button {
@@ -34,8 +46,13 @@
         align-items: center;
         // justify-content: space-around;
 
-        &::before{
-            
+        &::after {
+            content: "";
+            background-image: url('/img/vector.svg');
+            position: absolute;
+            width: 14px;
+            height: 8px;
+            right: 20px;
         }
     }
 
@@ -43,33 +60,6 @@
         display: none;
     }
 
-    &__openToggleIcon {
-        display: block;
-        cursor: pointer;
-        position: absolute;
-        right: 20px;
-        // top: 15px;
-        width: 40px;
-        height: 40px;
 
-        & use {
-            fill: transparent;
-            stroke: #D6B88D;
-        }
-    }
 
-    &__closeToggleIcon {
-        display: none;
-        cursor: pointer;
-        position: absolute;
-        right: 10px;
-        bottom: 215px;
-        width: 40px;
-        height: 40px;
-
-        & use {
-            fill: transparent;
-            stroke: #D6B88D;
-        }
-    }
 }
