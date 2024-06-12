@@ -12,6 +12,9 @@ choiceCity()
 import { toggle } from './src/js/toggle.js'
 toggle()
 
+import { range } from './src/js/range.js'
+range()
+
 import { slider } from "slider00";
 import './node_modules/slider00/dist/slider00.css';
 
