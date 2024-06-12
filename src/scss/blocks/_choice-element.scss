@@ -1,15 +1,12 @@
 @import "../mixins";
 
-.choice-city {
+.choice-element {
     display: flex;
     flex-direction: column;
     
     width: 100%;
     height: auto;
-    padding: 12px 20px 12px 20px;
-    // transform: translateY(50%);
-    // left: 0;
-    // top: 10%;
+    padding: 12px 20px 12px 20px; 
     
     
     border-radius: 4px;
@@ -54,8 +51,6 @@
 
         list-style-type: none;
     }
-    
-    // &__item{}
     
     &__link{
         text-decoration: none;

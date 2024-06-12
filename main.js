@@ -6,8 +6,8 @@ setupCounter()
 import { modal } from './src/js/modal.js'
 modal()
 
-import { choiceCity } from './src/js/choice-city.js'
-choiceCity()
+import { choiceElement } from './src/js/choice-element.js'
+choiceElement()
 
 import { toggle } from './src/js/toggle.js'
 toggle()
