@@ -31,3 +31,30 @@ async function fetchData() {
 }
 
 fetchData();
+
+
+
+import noUiSlider from 'nouislider';
+import './node_modules/nouislider/dist/nouislider.min.css';
+
+document.addEventListener('DOMContentLoaded', function () {
+  var slider = document.getElementById('slider');
+
+  noUiSlider.create(slider, {
+    start: [20, 80], // Начальные значения ползунков
+    connect: true, // Показывает цветную линию между двумя ползунками
+    range: {
+      'min': 0,
+      'max': 100
+    }
+  });
+
+
+
+  var limitFieldMin = document.getElementById('slider-limit-value-min');
+  var limitFieldMax = document.getElementById('slider-limit-value-max');
+
+  slider.noUiSlider.on('update', function (values, handle) {
+    (handle ? limitFieldMax : limitFieldMin).innerHTML = values[handle];
+  });
+});

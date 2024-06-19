@@ -637,11 +637,24 @@ product.html#3
         <div class="toggle" data-toggle>
             <button>Пол</button>
             <div>
-                <div class="toggle" data-toggle>
-                    <button>Пол2</button>
-                    <div>
-                        Content
-                    </div>
+                <div class="container">
+                    <label class="container__form-checkbox">
+                        <input class="container__real-checkbox" type="checkbox" name="">
+                        <span class="container__custom-checkbox"></span>
+                        Женские (182)
+                    </label>
+
+                    <label class="container__form-checkbox">
+                        <input class="container__real-checkbox" type="checkbox" name="">
+                        <span class="container__custom-checkbox"></span>
+                        Мужские (126)
+                    </label>
+
+                    <label class="container__form-checkbox">
+                        <input class="container__real-checkbox" type="checkbox" name="">
+                        <span class="container__custom-checkbox"></span>
+                        Унисекс (83)
+                    </label>
                 </div>
             </div>
         </div>
@@ -650,9 +663,20 @@ product.html#3
             <button>Ноты</button>
             <div>
                 <div class="toggle" data-toggle>
-                    <button>Ноты2</button>
+                    <button>Все</button>
                     <div>
-                        Content
+                        <div class="choice-element choice-element--filter" data-choice-element data-choice-key="nots">
+                            <div class="choice-element__test">
+
+                                <div class="choice-element__input-row">
+                                    <input type="text" class="choice-element__input" placeholder="Найти парфюм...">
+                                    <svg class="choice-element__icon">
+                                        <use xlink:href="#search"></use>
+                                    </svg>
+                                </div>
+                                <ul class="choice-element__list" data-choice-list></ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -673,10 +697,12 @@ product.html#3
             <input class="range" type="range" min="500" max="999999" value="500" id="slider-range">
             <input class="range" type="range" min="500" max="999999" value="999999" id="slider-rangeTho">
         </div>
-
-        <!-- <span class="range-v" id="range-v">500</span>
-        <span class="range-vr" id="range-vr">5000</span> -->
     </div>
+
+
+    <div class="slider-range" id="slider"></div>
+    <div class="range-min" id="slider-limit-value-min"></div>
+    <div class="range-max" id="slider-limit-value-max"></div>
 
     <br>
     <br>
