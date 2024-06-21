@@ -38,14 +38,22 @@ import noUiSlider from 'nouislider';
 import './node_modules/nouislider/dist/nouislider.min.css';
 
 document.addEventListener('DOMContentLoaded', function () {
-  var slider = document.getElementById('slider');
+  var slider = document.getElementById('range-slider');
 
   noUiSlider.create(slider, {
-    start: [20, 80], // Начальные значения ползунков
+    start: [0, 999999], // Начальные значения ползунков
     connect: true, // Показывает цветную линию между двумя ползунками
     range: {
       'min': 0,
-      'max': 100
+      'max': 999999
+    },
+    format: {
+      to: function (value) {
+        return Math.round(value); // Округление значения до целого числа
+      },
+      from: function (value) {
+        return Math.round(value); // Округление значения до целого числа
+      }
     }
   });
 

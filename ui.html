@@ -691,18 +691,27 @@ product.html#3
 
 
     <!-- ползунок цены -->
-    <div class="wrapper">
+    <!-- <div class="wrapper">
         <div class="container">
             <div class="slider-track"></div>
             <input class="range" type="range" min="500" max="999999" value="500" id="slider-range">
             <input class="range" type="range" min="500" max="999999" value="999999" id="slider-rangeTho">
         </div>
+    </div> -->
+
+
+    <div class="slider-range" id="range-slider"></div>
+    <div class="container-price">
+        <div class="min-price">
+            <span class="range-min">от</span>
+            <div class="range-min" id="slider-limit-value-min"></div>
+            <span class="range-min">&#8381;</span>
+        </div>
+        <div class="max-price">
+            <div class="range-max" id="slider-limit-value-max"></div>
+            <span class="range-min">&#8381;</span>
+        </div>
     </div>
-
-
-    <div class="slider-range" id="slider"></div>
-    <div class="range-min" id="slider-limit-value-min"></div>
-    <div class="range-max" id="slider-limit-value-max"></div>
 
     <br>
     <br>
