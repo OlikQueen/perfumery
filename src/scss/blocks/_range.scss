@@ -1,11 +1,14 @@
 @import "../mixins";
 
+.range-container {
+    width: 100%;
+}
+
 .noUi-target {
-    width: 50%;
-    background-color: red;
+    background: #d31c1c;
     border-radius: 4px;
     border: 1px solid #D3D3D3;
-    box-shadow: none;
+    box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB;
 }
 
 .slider-range {
@@ -16,6 +19,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    padding-inline: 10px;
 }
 
 // .min-price {}
@@ -33,101 +37,3 @@
 }
 
 // .max-price {}
-
-
-
-// .wrapper {
-//     position: relative;
-//     margin-left: 10px;
-//     width: 240px;
-//     background: rgb(33, 30, 28);
-//     padding: 50px 40px 20px 40px;
-// }  
-
-// .container {
-//     position: relative;
-//     width: 100%;
-//     height: 100px;
-//     // border: 1px solid #ffff;
-//     margin-top: 30px;
-// }
-
-// input[type="range"] {
-//     appearance: none;
-//     width: 100%;
-//     outline: none;
-//     position: absolute;
-//     margin: auto;
-//     top: 0;
-//     bottom: 0;
-//     background-color: transparent;
-//     pointer-events: none;
-// }
-
-// .slider-track {
-//     width: 100%;
-//     height: 5px;
-//     background-color: #d5d5d5;
-//     position: absolute;
-//     margin: auto;
-//     top: 0;
-//     bottom: 0;
-//     border-radius: 5px;
-// }
-
-// input[type="range"]::-webkit-slider-runnable-track{
-//     -webkit-appearance: none;
-//     height: 5px;
-// }
-
-// input[type="range"]::-moz-range-track{
-//     -moz-appearance: none;
-//     height: 5px;
-// }
-
-// input[type="range"]::-ms-track{
-//     appearance: none;
-//     height: 5px;
-// }
-
-// input[type="range"]::-webkit-slider-thumb{
-//     -webkit-appearance: none;
-//     height: 15px;
-//     width: 15px;
-//     background-color: #D6B88D;
-//     cursor: pointer;
-//     border-radius: 10px;
-//     margin-top: -5px;
-//     pointer-events: auto;
-// }
-
-// input[type="range"]::-moz-range-thumb{
-//     height: 1.7em;
-//     width: 1.7em;
-//     cursor: pointer;
-//     border-radius: 50%;
-//     background-color: aqua;
-//     pointer-events: auto;
-// }
-
-// input[type="range"]::-ms-thumb{
-//     appearance: none;
-//     height: 1.7em;
-//     width: 1.7em;
-//     cursor: pointer;
-//     border-radius: 50%;
-//     background-color: aqua;
-//     pointer-events: auto;
-// }
-
-// input[type="range"]:active::-webkit-slider-thumb{
-//     background-color: #D6B88D;
-//     border: 3px solid #D6B88D;
-//     height: 20px;
-//     width: 20px;
-//     margin-top: -8px;
-// }
-
-// .slider-range{
-//     background: #D6B88D;
-// }
