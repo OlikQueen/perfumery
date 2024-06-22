@@ -490,59 +490,7 @@
         </form>
       </div> -->
 
-    <!--
-    10 примеров
-    
-  block
-  block__title
-  block__main
-  block__navigation
-  
 
-1
-  карточка отзыва
-  block
-  block__row
-  block__row
-
-  block__title
-  block__content
-3
-  заказы
-  block
-  block__top
-  block__content
-  block__bottom
-4
-  итог корзины
-  block
-  block__title
-  block__таблица
-  block__content
-  block__оплата
-  block__bottom
-5
-  баллы
-  block
-  block__title
-  block__content
-
-6
- 
--->
-
-
-
-    <!-- <a href="product.html#1"></a>
-    <a href="product.html#2"></a>
-    <a href="product.html#3"></a>
-    <a href="product.html#4"></a>
-    <a href="product.html#5"></a>
-    <a href="product.html#6"></a> -->
-
-    <!-- /* 
-product.html#3
-*/ -->
 
 
 
@@ -597,25 +545,24 @@ product.html#3
 
     <div class="accordion">
 
-        <!-- <item>
-            <item></item>
-            <item></item>
-            <item>
-                <item></item>
-                <item></item>
-            </item>
-        </item>
-        <item></item>
-        <item></item>
-        <item></item> -->
-
         <div class="toggle" data-toggle>
             <button data-btnOne>Бренд</button>
             <div>
                 <div class="toggle" data-toggle>
-                    <button class="toggle__btn" data-btnTwo>Бренд 2</button>
+                    <button class="toggle__btn" data-btnTwo>Все бренды</button>
                     <div>
-                        Content inner
+                        <div class="choice-element choice-element--filter" data-choice-element data-choice-key="nots">
+                            <div class="choice-element__test">
+
+                                <div class="choice-element__input-row">
+                                    <input type="text" class="choice-element__input" placeholder="Найти парфюм...">
+                                    <svg class="choice-element__icon">
+                                        <use xlink:href="#search"></use>
+                                    </svg>
+                                </div>
+                                <ul class="choice-element__list" data-choice-list></ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -625,12 +572,18 @@ product.html#3
         <div class="toggle" data-toggle>
             <button>Стоимость</button>
             <div>
-                <div class="toggle" data-toggle>
-                    <button data-clikRotate>Стоимость2</button>
-                    <div>
-                        Content
+                <!-- <div class="slider-range" id="range-slider"></div>
+                <div class="container-price">
+                    <div class="min-price">
+                        <span class="range-min">от</span>
+                        <div class="range-min" id="slider-limit-value-min"></div>
+                        <span class="range-min">&#8381;</span>
                     </div>
-                </div>
+                    <div class="max-price">
+                        <div class="range-max" id="slider-limit-value-max"></div>
+                        <span class="range-min">&#8381;</span>
+                    </div>
+                </div> -->
             </div>
         </div>
 
@@ -681,6 +634,8 @@ product.html#3
                 </div>
             </div>
         </div>
+
+        <button class="accordion__reset">Сбросить</button>
     </div>
 
     <br>
@@ -740,15 +695,44 @@ product.html#3
         </label>
     </div>
 
-
-
     <br>
     <br>
     <br>
     <br>
     <br>
 
+    <div class="filters">
+        <button class="filters__open" data-filterOpen>По популярности</button>
+        <div class="filters__content" data-filterContent>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, error? Rem perspiciatis modi mollitia nulla
+            minus similique eos optio, molestiae delectus facere nisi hic ipsum voluptatibus nesciunt magnam omnis
+            provident.
+        </div>
+    </div>
 
+
+    <ul class="sorting">
+        <li class="sorting__link">
+            По популярности
+        </li>
+        <li class="sorting__link">
+            По рейтингу
+        </li>
+        <li class="sorting__link">
+            Сортировка от последнего
+        </li>
+        <li class="sorting__link">
+            Цена по убыванию
+        </li>
+        <li class="sorting__link">
+            Ценапо возрастанию
+        </li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
     <!-- svg sprite -->
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:0; height: 0;">
