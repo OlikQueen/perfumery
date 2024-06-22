@@ -9,4 +9,6 @@ export function filters() {
             filterContent.style.display = 'none';
         }
     });
+
+   
 }
