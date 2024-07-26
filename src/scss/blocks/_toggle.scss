@@ -2,7 +2,12 @@
 
 .toggle {
     margin-bottom: 20px;
+    width: 100%;
+    // z-index: 100;
 
+    &__btn{
+        background: red;
+    }
 
     &.is-show {
 
@@ -36,9 +41,7 @@
         width: 100%;
         height: auto;
         padding-block: 10px;
-        background: rgb(54, 51, 46);
-
-
+        background: rgb(33, 30, 28);
 
         color: #D6B88D;
         // text-align: start;
@@ -59,7 +62,4 @@
     &>div {
         display: none;
     }
-
-
-
 }

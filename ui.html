@@ -549,7 +549,7 @@
             <button data-btnOne>Бренд</button>
             <div>
                 <div class="toggle" data-toggle>
-                    <button class="toggle__btn" data-btnTwo>Все бренды</button>
+                    <button  class="toggle__btn" data-btnTwo>Все бренды</button>
                     <div>
                         <div class="choice-element choice-element--filter" data-choice-element data-choice-key="nots">
                             <div class="choice-element__test">
@@ -572,7 +572,20 @@
         <div class="toggle" data-toggle>
             <button>Стоимость</button>
             <div>
-               
+                <div class="range-container">
+                    <div class="slider-range" id="range-slider"></div>
+                    <div class="container-price">
+                        <div class="min-price">
+                            <span class="range-min">от</span>
+                            <div class="range-min" id="slider-limit-value-min"></div>
+                            <span class="range-min">&#8381;</span>
+                        </div>
+                        <div class="max-price">
+                            <div class="range-max" id="slider-limit-value-max"></div>
+                            <span class="range-min">&#8381;</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -635,20 +648,7 @@
 
 
     <!-- ползунок цены -->
-    <div class="range-container">
-        <div class="slider-range" id="range-slider"></div>
-        <div class="container-price">
-            <div class="min-price">
-                <span class="range-min">от</span>
-                <div class="range-min" id="slider-limit-value-min"></div>
-                <span class="range-min">&#8381;</span>
-            </div>
-            <div class="max-price">
-                <div class="range-max" id="slider-limit-value-max"></div>
-                <span class="range-min">&#8381;</span>
-            </div>
-        </div>
-    </div>
+   
 
     <br>
     <br>
@@ -657,7 +657,7 @@
     <br>
 
     <!-- чекбокс -->
-    <div class="container">
+    <!-- <div class="container">
         <label class="container__form-checkbox">
             <input class="container__real-checkbox" type="checkbox" name="">
             <span class="container__custom-checkbox"></span>
@@ -675,7 +675,7 @@
             <span class="container__custom-checkbox"></span>
             Унисекс (83)
         </label>
-    </div>
+    </div> -->
 
     <br>
     <br>
@@ -683,7 +683,7 @@
     <br>
     <br>
 
-    <div class="filters">
+    <!-- <div class="filters">
         <button class="filters__open" data-filterOpen>По популярности</button>
         <div class="filters__content" data-filterContent>
             <ul class="filters__sorting sorting">
@@ -704,7 +704,7 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </div> -->
 
 
 

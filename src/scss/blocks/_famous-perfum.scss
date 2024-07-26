@@ -1,8 +1,10 @@
 @import "../mixins";
 
-.famousPerfum {
-    padding-left: 20px;
+
+.famous-perfum {
+    padding-inline: 5%;
     margin-bottom: 40px;
+
 
     &__title {
         margin-bottom: 20px;
@@ -16,10 +18,19 @@
 
     &__scroll {
         display: flex;
+        justify-content: space-between;
         gap: 10px;
         overflow-x: auto;
         overflow-y: auto;
         width: 100%;
+
+        &>div:first-of-type {
+            @include mq(xl) {
+                min-width: 297px;
+                max-width: 522px;
+                background-repeat: no-repeat;
+            }
+        }
     }
 
     &__perfume-card {

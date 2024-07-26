@@ -15,25 +15,23 @@ toggle()
 import { range } from './src/js/range.js'
 range()
 
-import { filters } from './src/js/filters.js'
-filters()
+// import { filters } from './src/js/filters.js'
+// filters()
 
 import { slider } from "slider00";
 import './node_modules/slider00/dist/slider00.css';
 
-
-
 import db from './firebase-config';
 import { collection, getDocs } from 'firebase/firestore';
 
-async function fetchData() {
-  const querySnapshot = await getDocs(collection(db, "users"));
-  querySnapshot.forEach((doc) => {
-    console.log(`${doc.id} =>`, doc.data());
-  });
-}
+// async function fetchData() {
+//   const querySnapshot = await getDocs(collection(db, "users"));
+//   querySnapshot.forEach((doc) => {
+//     console.log(`${doc.id} =>`, doc.data());
+//   });
+// }
 
-fetchData();
+// fetchData();
 
 
 

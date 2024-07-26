@@ -219,17 +219,34 @@
 
       <div class="slider" data-timeout="4000" data-dotted data-infinity="1">
 
-        <!-- <img class="active" src="imag/mbParf_The.png" data-item alt="">
-        <img src="imag/mbParf_Four.png" data-item alt=""> -->
+        <div class="slider__item" data-item>
+          <div class="slider__item-bg" style="background-image: url('imag/mbParf_One.png');"></div>
+          <div class="slider__item-bg slider__item-bg--desktop"
+            style="background-image: url('imag/desctopParf_One.png');"></div>
+        </div>
+
+        <div class="slider__item" data-item>
+          <div class="slider__item-bg" style="background-image: url('imag/mbParf_Two.png');"></div>
+          <div class="slider__item-bg slider__item-bg--desktop"
+            style="background-image: url('imag/desctopParf_Two.png');"></div>
+        </div>
 
         <div class="slider__item" data-item>
           <div class="slider__item-bg" style="background-image: url('imag/mbParf_The.png');"></div>
-          <div class="slider__item-bg slider__item-bg--desktop" style="background-image: url('imag/desctopParf_Thre.png');"></div>
+          <div class="slider__item-bg slider__item-bg--desktop"
+            style="background-image: url('imag/desctopParf_Thre.png');"></div>
         </div>
 
         <div class="slider__item" data-item>
           <div class="slider__item-bg" style="background-image: url('imag/mbParf_Four.png');"></div>
-          <div class="slider__item-bg slider__item-bg--desktop" style="background-image: url('imag/desctopParf_Four.png');"></div>
+          <div class="slider__item-bg slider__item-bg--desktop"
+            style="background-image: url('imag/desctopParf_Four.png');"></div>
+        </div>
+
+        <div class="slider__item" data-item>
+          <div class="slider__item-bg" style="background-image: url('imag/mbParf_Five.png');"></div>
+          <div class="slider__item-bg slider__item-bg--desktop"
+            style="background-image: url('imag/desctopParf_Five.png');"></div>
         </div>
 
       </div>
@@ -237,16 +254,15 @@
     </section>
   </div>
 
-  <div class="page__famousPerfum">
-    <!-- поменять через дефис -->
-    <section class="famousPerfum">
-      <h3 class="famousPerfum__title">
+  <div class="page__famous-perfum">
+    <section class="famous-perfum">
+      <h3 class="famous-perfum__title">
         Популярные ароматы
       </h3>
 
-      <div class="famousPerfum__scroll">
+      <div class="famous-perfum__scroll">
 
-        <div class="famousPerfum__perfume-card perfume-card">
+        <div class="famous-perfum__perfume-card perfume-card">
           <div class="perfume-card__inner">
             <h3 class="perfume-card__h3">
               Для неё
@@ -255,14 +271,14 @@
               <h3 class="perfume-card__h3 perfume-card__h3--weight">
                 Victoria Secret Bombshell
               </h3>
-              <button type="button" class="btn">
+              <button type="button" class="perfume-card__btn btn">
                 <p class="btn__p">в корзину</p>
               </button>
             </div>
           </div>
         </div>
 
-        <div class="famousPerfum__perfume-card perfume-card perfume-card--aventus">
+        <div class="famous-perfum__perfume-card perfume-card perfume-card--aventus">
           <div class="perfume-card__inner">
             <h3 class="perfume-card__h3">
               Для него
@@ -271,14 +287,14 @@
               <h3 class="perfume-card__h3 perfume-card__h3--weight">
                 Aventus By Creed
               </h3>
-              <button type="button" class="btn">
+              <button type="button" class="perfume-card__btn btn">
                 <p class="btn__p">в корзину</p>
               </button>
             </div>
           </div>
         </div>
 
-        <div class="famousPerfum__perfume-card perfume-card perfume-card--narcotiqe">
+        <div class="famous-perfum__perfume-card perfume-card perfume-card--narcotiqe">
           <div class="perfume-card__inner">
             <h3 class="perfume-card__h3">
               Унисекс
@@ -287,7 +303,7 @@
               <h3 class="perfume-card__h3 perfume-card__h3--weight">
                 Narcotiqe
               </h3>
-              <button type="button" class="btn">
+              <button type="button" class="perfume-card__btn btn">
                 <p class="btn__p">в корзину</p>
               </button>
             </div>
@@ -360,7 +376,7 @@
 
   <div class="page__showcase">
     <section class="showcase">
-      
+
       <h2 class="showcase__title">
         Каталог
       </h2>
@@ -370,15 +386,114 @@
       </div>
 
       <div class="showcase__container">
-        <div class="showcase__empty-column">empty-column</div>
-        
+        <div class="showcase__empty-column">
+
+          <div class="accordion">
+
+            <div class="toggle" data-toggle>
+              <button data-btnOne>Бренд</button>
+              <div>
+                <div class="toggle" data-toggle>
+                  <button class="toggle__btn" data-btnTwo>Все бренды</button>
+                  <div>
+                    <div class="choice-element choice-element--filter" data-choice-element data-choice-key="nots">
+                      <div class="choice-element__test">
+
+                        <div class="choice-element__input-row">
+                          <input type="text" class="choice-element__input" placeholder="Найти парфюм...">
+                          <svg class="choice-element__icon">
+                            <use xlink:href="#search"></use>
+                          </svg>
+                        </div>
+                        <ul class="choice-element__list" data-choice-list></ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="toggle" data-toggle>
+              <button>Стоимость</button>
+              <div>
+                <div class="range-container">
+                  <div class="slider-range" id="range-slider"></div>
+                  <div class="container-price">
+                    <div class="min-price">
+                      <span class="range-min">от</span>
+                      <div class="range-min" id="slider-limit-value-min"></div>
+                      <span class="range-min">&#8381;</span>
+                    </div>
+                    <div class="max-price">
+                      <div class="range-max" id="slider-limit-value-max"></div>
+                      <span class="range-min">&#8381;</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="toggle" data-toggle>
+              <button>Пол</button>
+              <div>
+                <div class="container">
+                  <label class="container__form-checkbox">
+                    <input class="container__real-checkbox" type="checkbox" name="">
+                    <span class="container__custom-checkbox"></span>
+                    Женские (182)
+                  </label>
+
+                  <label class="container__form-checkbox">
+                    <input class="container__real-checkbox" type="checkbox" name="">
+                    <span class="container__custom-checkbox"></span>
+                    Мужские (126)
+                  </label>
+
+                  <label class="container__form-checkbox">
+                    <input class="container__real-checkbox" type="checkbox" name="">
+                    <span class="container__custom-checkbox"></span>
+                    Унисекс (83)
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="toggle" data-toggle>
+              <button>Ноты</button>
+              <div>
+                <div class="toggle" data-toggle>
+                  <button>Все</button>
+                  <div>
+                    <div class="choice-element choice-element--filter" data-choice-element data-choice-key="nots">
+                      <div class="choice-element__test">
+
+                        <div class="choice-element__input-row">
+                          <input type="text" class="choice-element__input" placeholder="Найти парфюм...">
+                          <svg class="choice-element__icon">
+                            <use xlink:href="#search"></use>
+                          </svg>
+                        </div>
+                        <ul class="choice-element__list" data-choice-list></ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="accordion__reset">Сбросить</button>
+          </div>
+
+        </div>
+
         <div class="showcase__content">
 
           <div class="showcase__product-card product-card">
             <img src="img/product-card.png" alt="" class="product-card__img">
             <h4 class="product-card__h4">The devil is a loser by Mushfig</h4>
             <h4 class="product-card__h4">Объем мл.</h4>
-  
+
             <div class="product-card__blok-btn blok-btn">
               <button type="button" class="blok-btn__ml btn btn--size">
                 <p class="btn__p">10</p>
@@ -407,7 +522,7 @@
             <img src="img/product-card.png" alt="" class="product-card__img">
             <h4 class="product-card__h4">The devil is a loser by Mushfig</h4>
             <h4 class="product-card__h4">Объем мл.</h4>
-  
+
             <div class="product-card__blok-btn blok-btn">
               <button type="button" class="blok-btn__ml btn btn--size">
                 <p class="btn__p">10</p>
@@ -435,7 +550,7 @@
             <img src="img/product-card.png" alt="" class="product-card__img">
             <h4 class="product-card__h4">The devil is a loser by Mushfig</h4>
             <h4 class="product-card__h4">Объем мл.</h4>
-  
+
             <div class="product-card__blok-btn blok-btn">
               <button type="button" class="blok-btn__ml btn btn--size">
                 <p class="btn__p">10</p>
@@ -463,7 +578,7 @@
             <img src="img/product-card.png" alt="" class="product-card__img">
             <h4 class="product-card__h4">The devil is a loser by Mushfig</h4>
             <h4 class="product-card__h4">Объем мл.</h4>
-  
+
             <div class="product-card__blok-btn blok-btn">
               <button type="button" class="blok-btn__ml btn btn--size">
                 <p class="btn__p">10</p>
@@ -491,7 +606,7 @@
             <img src="img/product-card.png" alt="" class="product-card__img">
             <h4 class="product-card__h4">The devil is a loser by Mushfig</h4>
             <h4 class="product-card__h4">Объем мл.</h4>
-  
+
             <div class="product-card__blok-btn blok-btn">
               <button type="button" class="blok-btn__ml btn btn--size">
                 <p class="btn__p">10</p>
@@ -519,7 +634,7 @@
             <img src="img/product-card.png" alt="" class="product-card__img">
             <h4 class="product-card__h4">The devil is a loser by Mushfig</h4>
             <h4 class="product-card__h4">Объем мл.</h4>
-  
+
             <div class="product-card__blok-btn blok-btn">
               <button type="button" class="blok-btn__ml btn btn--size">
                 <p class="btn__p">10</p>
@@ -542,12 +657,12 @@
               <p class="btn__p">в корзину</p>
             </button>
           </div>
-  
+
           <div class="showcase__product-card product-card">
             <img src="img/product-card.png" alt="" class="product-card__img">
             <h4 class="product-card__h4">The devil is a loser by Mushfig</h4>
             <h4 class="product-card__h4">Объем мл.</h4>
-  
+
             <div class="product-card__blok-btn blok-btn">
               <button type="button" class="blok-btn__ml btn btn--size">
                 <p class="btn__p">10</p>
@@ -570,12 +685,12 @@
               <p class="btn__p">в корзину</p>
             </button>
           </div>
-  
+
           <div class="showcase__product-card product-card">
             <img src="img/product-card.png" alt="" class="product-card__img">
             <h4 class="product-card__h4">The devil is a loser by Mushfig</h4>
             <h4 class="product-card__h4">Объем мл.</h4>
-  
+
             <div class="product-card__blok-btn blok-btn">
               <button type="button" class="blok-btn__ml btn btn--size">
                 <p class="btn__p">10</p>
@@ -598,9 +713,9 @@
               <p class="btn__p">в корзину</p>
             </button>
           </div>
-        </div>  
+        </div>
       </div>
-      
+
     </section>
   </div>
 
