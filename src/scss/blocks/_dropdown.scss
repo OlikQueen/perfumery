@@ -6,7 +6,6 @@
     position: relative;
     display: inline-block;
 
-    width: 165px;
     height: auto;
 
     // &:hover &__dropd-img,
@@ -24,7 +23,7 @@
     &__btn {
         display: flex;
         justify-content: space-around;
-        
+        gap: 20px;
 
         &:hover #{$block}__dropd-img,
         &:hover #{$block}__dropd-img::after,
@@ -74,7 +73,7 @@
     }
 
     &__li {
-        width: 165px;
+        width: 100%;
     }
 
     &:hover &__content {
